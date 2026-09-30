@@ -13,13 +13,38 @@ Built for Victoria 3 **1.13.x**.
 
 ## Installing
 
-Clone or copy this folder into:
+Run the install script from the repository root:
+
+```
+scripts/install.sh
+```
+
+It copies only the mod content (`.metadata`, `common`, `events`, `localization`, plus `gfx`, `gui` and `map_data` if they are ever added) into:
 
 ```
 ~/Documents/Paradox Interactive/Victoria 3/mod/victoria-3-canada-mod
 ```
 
+The destination is made to match the repository exactly. Before touching anything the script lists every file it will add, overwrite (`>fc`) or delete (`*deleting`) and asks for confirmation, so a stale or stray file in the game folder cannot survive. Pass `--yes` to skip the prompt, or a path to install somewhere else:
+
+```
+scripts/install.sh --yes
+scripts/install.sh "/path/to/mod/other-name"
+```
+
 Then enable **Victoria 3 Canada Mod** in the Paradox launcher and start a new game as **Upper Canada**. The **Canadian Start** game rule lets you keep the base game's divided British North America instead.
+
+If you installed an earlier build as `canadian_sovereignty`, disable or delete that folder. Two copies of the mod define the same things and will conflict.
+
+### Symlink alternative
+
+If you would rather not sync after every change, link the game folder to the repository instead:
+
+```
+ln -s "$PWD" "$HOME/Documents/Paradox Interactive/Victoria 3/mod/victoria-3-canada-mod"
+```
+
+Edits then show up in the game on the next launch. The catch is that the game and launcher will also see `README.md`, `.git` and the other non-mod files, and any `.DS_Store` files Finder drops in. That is harmless in practice but it is not a clean mod folder, so the script is the better choice for anything you share.
 
 ## Structure
 
