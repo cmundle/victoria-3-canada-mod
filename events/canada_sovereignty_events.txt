@@ -27,14 +27,14 @@ canada_sovereignty.1 = {
 
 	option = {
 		name = canada_sovereignty.1.a
-		default_option = yes
-		ai_chance = { base = 50 }
+		ai_chance = { base = 40 }
 	}
 
 	option = {
 		name = canada_sovereignty.1.b
+		default_option = yes
 		trigger_event = { id = canada_sovereignty.2 }
-		ai_chance = { base = 40 }
+		ai_chance = { base = 50 }
 	}
 
 	option = {
@@ -64,14 +64,14 @@ canada_sovereignty.2 = {
 	# Standard accord
 	option = {
 		name = canada_sovereignty.2.a
-		default_option = yes
 		canada_negotiated_independence = yes
-		ai_chance = { base = 50 }
+		ai_chance = { base = 40 }
 	}
 
 	# Accord plus Newfoundland, at the cost of some goodwill
 	option = {
 		name = canada_sovereignty.2.b
+		default_option = yes
 		trigger = {
 			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
 		}
@@ -81,7 +81,7 @@ canada_sovereignty.2 = {
 			country = c:GBR
 			value = -20
 		}
-		ai_chance = { base = 50 }
+		ai_chance = { base = 60 }
 	}
 
 	# Walk away for now; the journal entry stays open
@@ -144,7 +144,7 @@ canada_sovereignty.3 = {
 
 	# Decline: British North America stays divided, as in the base game
 	option = {
-		name = canada_sovereignty.3.d
+		name = canada_sovereignty.3.e
 		ai_chance = { base = 0 }
 	}
 }
