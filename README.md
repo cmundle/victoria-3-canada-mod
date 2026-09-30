@@ -77,6 +77,7 @@ Run through this before merging anything:
    - **Wait:** the Path to Sovereignty journal entry appears with both buttons.
    - **Negotiate:** Canada is independent, allied to Britain, in Britain's power bloc, with trade privileges and a truce. Try the Newfoundland option too.
    - **Break away:** an independence diplomatic play against Britain starts.
+   - Once independent by either route, Canada has the Colonization technology and the Frontier Colonization law.
 4. Decline the conference, and separately start with the **Canadian Start** rule set to **Base Game**. Both should leave British North America divided as usual, with the base game's Unite Canada journal entry.
 5. Switch the game language to French and skim the event and journal text.
 6. `error.log` has no lines mentioning this mod's files, and `debug.log` shows the `CANADA MOD:` setup lines.

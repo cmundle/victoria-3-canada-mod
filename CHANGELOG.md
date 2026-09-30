@@ -4,6 +4,7 @@
 - The Confederation Conference: on day one, Upper Canada picks Ottawa, Quebec City or Halifax to host, and that city becomes the capital. Declining keeps the base game start.
 - The base game's Unite Canada journal entry is hidden once Confederation happens.
 - New Canadian Start game rule to skip the conference and keep the base game start.
+- Independence, by accord or by war, grants the Colonization technology and enacts Frontier Colonization.
 - French localization.
 - Testing checklist in the README.
 
