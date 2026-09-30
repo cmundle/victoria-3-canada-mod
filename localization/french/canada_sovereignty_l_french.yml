@@ -24,6 +24,16 @@
  je_canadian_sovereignty: "La voie de la souveraineté"
  je_canadian_sovereignty_reason: "Le Canada demeure un dominion du Royaume-Uni. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu."
 
+ canada_national_identity_bar: "Identité nationale"
+ canada_national_identity_bar_desc: "À quel point les Canadiens se voient comme un seul peuple, distinct de la Grande-Bretagne : #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]#!/100. Londres offre de meilleures conditions à un Canada qui sait ce qu'il veut."
+ canada_identity_generation_tt: "Une génération qui grandit canadienne"
+ canada_identity_literacy_tt: "[concept_literacy] d'au moins 30 %"
+ canada_identity_franchise_tt: "Les Canadiens élisent leur propre gouvernement"
+ canada_identity_gdp_tt: "[concept_gdp] parmi les 20 premiers"
+ canada_identity_sol_tt: "[concept_sol] parmi les 20 premiers"
+ canada_identity_rank_tt: "Le Canada est une puissance majeure ou plus"
+ canada_identity_newfoundland_tt: "#v Identité nationale#! d'au moins #v 50#!"
+
  canada_negotiate_accord_button: "Négocier l'Accord anglo-canadien"
  canada_negotiate_accord_button_desc: "Envoyer une délégation à Londres pour obtenir une indépendance pacifique. Le Canada reste dans la sphère britannique, avec une alliance de dix ans, des privilèges commerciaux mutuels et une trêve entre les deux nations."
  canada_break_hard_button: "Déclarer l'indépendance"

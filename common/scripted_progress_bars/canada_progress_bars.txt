@@ -1,0 +1,55 @@
+﻿# National identity on the Path to Sovereignty. Fills month by month as
+# Canada grows literate, prosperous and self-governing; events push it
+# up or down. The accord's terms get better as it rises.
+canada_national_identity_bar = {
+	name = "canada_national_identity_bar"
+	desc = "canada_national_identity_bar_desc"
+
+	default_green = yes
+
+	monthly_progress = {
+		add = {
+			desc = "canada_identity_generation_tt"
+			value = 0.25
+		}
+		if = {
+			limit = { literacy_rate >= 0.3 }
+			add = {
+				desc = "canada_identity_literacy_tt"
+				value = 0.5
+			}
+		}
+		if = {
+			limit = { country_has_voting_franchise = yes }
+			add = {
+				desc = "canada_identity_franchise_tt"
+				value = 0.5
+			}
+		}
+		if = {
+			limit = { gdp_ranking <= 20 }
+			add = {
+				desc = "canada_identity_gdp_tt"
+				value = 0.5
+			}
+		}
+		if = {
+			limit = { sol_ranking <= 20 }
+			add = {
+				desc = "canada_identity_sol_tt"
+				value = 0.5
+			}
+		}
+		if = {
+			limit = { country_rank >= rank_value:major_power }
+			add = {
+				desc = "canada_identity_rank_tt"
+				value = 0.5
+			}
+		}
+	}
+
+	start_value = 20
+	min_value = 0
+	max_value = 100
+}

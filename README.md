@@ -75,7 +75,8 @@ Run through this before merging anything:
 2. The Confederation Conference fires on day one. Pick a host city and you become Canada, owning Upper and Lower Canada, New Brunswick, Nova Scotia, Rupert's Land and the Columbia District, with the capital in the host city. The base game's Unite Canada journal entry should not appear.
 3. The Question of Sovereignty fires within the first month. Reload and try each option:
    - **Wait:** the Path to Sovereignty journal entry appears with both buttons.
-   - **Negotiate:** Canada is independent, allied to Britain, in Britain's power bloc, with trade privileges and a truce. Try the Newfoundland option too.
+   - **Negotiate:** Canada is independent, allied to Britain, in Britain's power bloc, with trade privileges and a truce. The Newfoundland option is greyed out until National Identity reaches 50 (use the console to test it).
+   - The journal entry shows a National Identity bar starting at 20 and rising each month.
    - **Break away:** an independence diplomatic play against Britain starts.
    - Once independent by either route, Canada has the Colonization technology and the Frontier Colonization law.
 4. Decline the conference, and separately start with the **Canadian Start** rule set to **Base Game**. Both should leave British North America divided as usual, with the base game's Unite Canada journal entry.

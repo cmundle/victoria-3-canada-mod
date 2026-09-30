@@ -2,6 +2,8 @@
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	group = je_group_foreign_affairs
 
+	scripted_progress_bar = canada_national_identity_bar
+
 	scripted_button = canada_negotiate_accord_button
 	scripted_button = canada_break_hard_button
 

@@ -5,6 +5,7 @@
 - The base game's Unite Canada journal entry is hidden once Confederation happens.
 - New Canadian Start game rule to skip the conference and keep the base game start.
 - Independence, by accord or by war, grants the Colonization technology and enacts Frontier Colonization.
+- National Identity bar on the Path to Sovereignty. It fills monthly from literacy, voting rights, GDP, standard of living and rank, and the Newfoundland deal needs 50.
 - French localization.
 - Testing checklist in the README.
 

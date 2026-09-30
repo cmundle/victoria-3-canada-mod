@@ -74,6 +74,16 @@ canada_sovereignty.2 = {
 		default_option = yes
 		trigger = {
 			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
+			# London only gives ground to a Canada with a strong sense of itself
+			custom_tooltip = {
+				text = canada_identity_newfoundland_tt
+				je:je_canadian_sovereignty ?= {
+					"scripted_bar_progress(canada_national_identity_bar)" >= 50
+				}
+			}
+		}
+		show_as_unavailable = {
+			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
 		}
 		canada_gain_newfoundland = yes
 		canada_negotiated_independence = yes
