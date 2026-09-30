@@ -3,3 +3,14 @@
 	country_prestige_add = 10
 	country_influence_add = 25
 }
+
+canada_independence_by_arms = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	country_prestige_add = 20
+}
+
+canada_rebellion_crushed = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	country_prestige_add = -10
+	country_influence_add = -15
+}

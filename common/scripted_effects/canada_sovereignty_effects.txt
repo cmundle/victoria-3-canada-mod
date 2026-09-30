@@ -97,6 +97,7 @@ canada_negotiated_independence = {
 
 # Scope: Canada
 canada_hard_break = {
+	set_variable = canada_hard_break_started
 	change_relations = {
 		country = c:GBR
 		value = -50

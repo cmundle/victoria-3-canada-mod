@@ -49,8 +49,8 @@ Make the core feature of the mod richer before adding breadth.
 
 - [x] National identity progress bar on the Path to Sovereignty journal entry, filled by literacy, voting rights, GDP, standard of living and rank.
 - [x] Better accord terms unlocked as national identity grows: Newfoundland needs 50.
-- [ ] Pressure from waiting: occasional events where London tightens its grip or reformers push harder.
-- [ ] Hard break aftermath events for victory (recognition, cold relations with London) and defeat (reprisals, loss of autonomy, the journal entry stays open).
+- [x] Pressure from waiting: occasional events where London tightens its grip or reformers push harder.
+- [x] Hard break aftermath events for victory (recognition, cold relations with London) and defeat (reprisals, loss of autonomy, the journal entry stays open).
 - [ ] British reaction events from London's side, so an AI or player Britain feels the break too.
 - [ ] American angle: the United States may offer support to a breakaway Canada, at a price.
 

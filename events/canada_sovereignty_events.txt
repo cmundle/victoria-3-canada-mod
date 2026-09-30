@@ -158,3 +158,156 @@ canada_sovereignty.3 = {
 		ai_chance = { base = 0 }
 	}
 }
+
+# London tightens its grip (random, while waiting)
+canada_sovereignty.4 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.4.t
+	desc = canada_sovereignty.4.d
+	flavor = canada_sovereignty.4.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		is_subject_of = c:GBR
+		has_journal_entry = je_canadian_sovereignty
+	}
+
+	option = {
+		name = canada_sovereignty.4.a
+		default_option = yes
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = -5 name = canada_national_identity_bar }
+		}
+		change_relations = { country = c:GBR value = 10 }
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = canada_sovereignty.4.b
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = 5 name = canada_national_identity_bar }
+		}
+		change_relations = { country = c:GBR value = -15 }
+		ai_chance = { base = 50 }
+	}
+}
+
+# Reformers rally (random, while waiting)
+canada_sovereignty.5 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.5.t
+	desc = canada_sovereignty.5.d
+	flavor = canada_sovereignty.5.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	duration = 3
+
+	trigger = {
+		is_subject_of = c:GBR
+		has_journal_entry = je_canadian_sovereignty
+	}
+
+	option = {
+		name = canada_sovereignty.5.a
+		default_option = yes
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = 5 name = canada_national_identity_bar }
+		}
+		change_relations = { country = c:GBR value = -5 }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = canada_sovereignty.5.b
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = -3 name = canada_national_identity_bar }
+		}
+		change_relations = { country = c:GBR value = 5 }
+		ai_chance = { base = 40 }
+	}
+}
+
+# Independence won by force
+canada_sovereignty.6 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.6.t
+	desc = canada_sovereignty.6.d
+	flavor = canada_sovereignty.6.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	immediate = {
+		remove_variable = canada_hard_break_started
+	}
+
+	# Pride: a lasting boost, and London stays cold
+	option = {
+		name = canada_sovereignty.6.a
+		default_option = yes
+		add_modifier = { name = canada_independence_by_arms days = 3650 }
+		ai_chance = { base = 60 }
+	}
+
+	# Reconciliation: less glory, but the door to London reopens
+	option = {
+		name = canada_sovereignty.6.b
+		change_relations = { country = c:GBR value = 50 }
+		ai_chance = { base = 40 }
+	}
+}
+
+# The hard break fails: the war was lost or the play backed down
+canada_sovereignty.7 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.7.t
+	desc = canada_sovereignty.7.d
+	flavor = canada_sovereignty.7.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+		set_variable = { name = canada_rebellion_crushed days = 3650 }
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = -20 name = canada_national_identity_bar }
+		}
+		add_modifier = { name = canada_rebellion_crushed days = 3650 }
+	}
+
+	option = {
+		name = canada_sovereignty.7.a
+		default_option = yes
+		ai_chance = { base = 100 }
+	}
+}

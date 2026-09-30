@@ -21,6 +21,29 @@
  canada_sovereignty.3.c: "Meet in Halifax, gateway to the Atlantic."
  canada_sovereignty.3.e: "The delegates go home without an agreement."
 
+ canada_sovereignty.4.t: "London Tightens Its Grip"
+ canada_sovereignty.4.d: "A new Governor General has arrived with instructions from the Colonial Office: tariffs will be set in London, and appointments to the Legislative Council will be reviewed there too. Our ministers are furious, but open defiance would sour relations with the Crown."
+ canada_sovereignty.4.f: "The Empire gives with one hand and takes with the other."
+ canada_sovereignty.4.a: "We will abide by the instructions."
+ canada_sovereignty.4.b: "Canadians will not be governed from Downing Street."
+
+ canada_sovereignty.5.t: "The Reformers Rally"
+ canada_sovereignty.5.d: "Crowds have gathered in the squares of our cities to hear reformers call for a government answerable to Canadians alone. Newspapers from Halifax to the Red River are printing their speeches. London is watching closely to see how we respond."
+ canada_sovereignty.5.f: "A people that reads its own newspapers soon wants its own government."
+ canada_sovereignty.5.a: "Let them be heard."
+ canada_sovereignty.5.b: "Disperse the crowds and keep the peace."
+
+ canada_sovereignty.6.t: "A Nation Won by Arms"
+ canada_sovereignty.6.d: "The guns have fallen silent and London has recognized what our soldiers won in the field: Canada is sovereign. The victory belongs to every farmer, voyageur and militiaman who stood against the greatest empire on earth. Now we must decide how to carry it."
+ canada_sovereignty.6.f: "We stand on guard, and we stood."
+ canada_sovereignty.6.a: "Let the world remember how Canada was won."
+ canada_sovereignty.6.b: "Offer London an honourable peace between equals."
+
+ canada_sovereignty.7.t: "The Rising Fails"
+ canada_sovereignty.7.d: "Our bid for independence has failed. British authority is restored, the leaders of the rising are in hiding or in chains, and many Canadians wonder whether the cause was ever worth the cost. It will be years before we can try again."
+ canada_sovereignty.7.f: "A cause can be defeated. It is harder to make it forgotten."
+ canada_sovereignty.7.a: "We will bide our time."
+
  je_canadian_sovereignty: "Path to Sovereignty"
  je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right."
 
@@ -41,6 +64,11 @@
 
  canada_anglo_canadian_accord: "Anglo-Canadian Accord"
  canada_anglo_canadian_accord_desc: "Canada and the United Kingdom parted as equals and remain close partners."
+
+ canada_independence_by_arms: "Independence by Arms"
+ canada_independence_by_arms_desc: "Canada won its sovereignty on the battlefield, and the world has taken notice."
+ canada_rebellion_crushed: "Rebellion Crushed"
+ canada_rebellion_crushed_desc: "Canada's rising against Britain failed. Another attempt must wait."
 
  rule_canada_start: "Canadian Start"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Confederation Conference#!#!"

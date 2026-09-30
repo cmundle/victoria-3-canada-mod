@@ -7,7 +7,7 @@ on_game_started_after_lobby = {
 }
 
 on_monthly_pulse_country = {
-	on_actions = { canada_setup_fallback canada_sovereignty_check }
+	on_actions = { canada_setup_fallback canada_sovereignty_check canada_hard_break_failed }
 }
 
 on_yearly_pulse_country = {
@@ -65,5 +65,21 @@ canada_accord_upkeep = {
 	}
 	effect = {
 		change_relations = { country = c:CAN value = 15 }
+	}
+}
+
+# A hard break that ends with Canada still a subject: the war was lost
+# or the play backed down. Independence by force is caught by the
+# journal entry's on_complete instead.
+canada_hard_break_failed = {
+	trigger = {
+		has_variable = canada_hard_break_started
+		is_subject_of = c:GBR
+		is_at_war = no
+		is_diplomatic_play_initiator = no
+	}
+	effect = {
+		remove_variable = canada_hard_break_started
+		trigger_event = { id = canada_sovereignty.7 }
 	}
 }

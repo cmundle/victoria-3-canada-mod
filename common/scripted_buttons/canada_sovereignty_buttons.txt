@@ -28,6 +28,7 @@ canada_break_hard_button = {
 	}
 	possible = {
 		is_at_war = no
+		NOT = { has_variable = canada_rebellion_crushed }
 	}
 
 	effect = {

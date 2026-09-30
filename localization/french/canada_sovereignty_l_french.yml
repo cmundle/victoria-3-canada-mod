@@ -21,6 +21,29 @@
  canada_sovereignty.3.c: "Se réunir à Halifax, porte de l'Atlantique."
  canada_sovereignty.3.e: "Les délégués rentrent chez eux sans entente."
 
+ canada_sovereignty.4.t: "Londres resserre son emprise"
+ canada_sovereignty.4.d: "Un nouveau gouverneur général est arrivé avec des instructions du ministère des Colonies : les tarifs douaniers seront fixés à Londres, et les nominations au Conseil législatif y seront aussi examinées. Nos ministres sont furieux, mais un défi ouvert gâterait nos relations avec la Couronne."
+ canada_sovereignty.4.f: "L'Empire donne d'une main et reprend de l'autre."
+ canada_sovereignty.4.a: "Nous respecterons les instructions."
+ canada_sovereignty.4.b: "Les Canadiens ne seront pas gouvernés depuis Downing Street."
+
+ canada_sovereignty.5.t: "Les réformistes se rassemblent"
+ canada_sovereignty.5.d: "Des foules se sont réunies sur les places de nos villes pour entendre les réformistes réclamer un gouvernement responsable devant les seuls Canadiens. De Halifax à la rivière Rouge, les journaux publient leurs discours. Londres observe de près notre réaction."
+ canada_sovereignty.5.f: "Un peuple qui lit ses propres journaux veut bientôt son propre gouvernement."
+ canada_sovereignty.5.a: "Qu'on les écoute."
+ canada_sovereignty.5.b: "Disperser les foules et maintenir l'ordre."
+
+ canada_sovereignty.6.t: "Une nation gagnée par les armes"
+ canada_sovereignty.6.d: "Les canons se sont tus et Londres a reconnu ce que nos soldats ont gagné sur le terrain : le Canada est souverain. Cette victoire appartient à chaque fermier, voyageur et milicien qui a tenu tête au plus grand empire du monde. Il nous faut maintenant décider comment la porter."
+ canada_sovereignty.6.f: "Nous montons la garde, et nous avons tenu."
+ canada_sovereignty.6.a: "Que le monde se souvienne de la façon dont le Canada fut gagné."
+ canada_sovereignty.6.b: "Offrir à Londres une paix honorable entre égaux."
+
+ canada_sovereignty.7.t: "Le soulèvement échoue"
+ canada_sovereignty.7.d: "Notre tentative d'indépendance a échoué. L'autorité britannique est rétablie, les chefs du soulèvement se cachent ou sont aux fers, et bien des Canadiens se demandent si la cause en valait le prix. Il faudra des années avant de pouvoir réessayer."
+ canada_sovereignty.7.f: "On peut vaincre une cause. Il est plus difficile de la faire oublier."
+ canada_sovereignty.7.a: "Nous attendrons notre heure."
+
  je_canadian_sovereignty: "La voie de la souveraineté"
  je_canadian_sovereignty_reason: "Le Canada demeure un dominion du Royaume-Uni. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu."
 
@@ -41,6 +64,11 @@
 
  canada_anglo_canadian_accord: "Accord anglo-canadien"
  canada_anglo_canadian_accord_desc: "Le Canada et le Royaume-Uni se sont séparés en égaux et demeurent de proches partenaires."
+
+ canada_independence_by_arms: "Indépendance par les armes"
+ canada_independence_by_arms_desc: "Le Canada a gagné sa souveraineté sur le champ de bataille, et le monde l'a remarqué."
+ canada_rebellion_crushed: "Rébellion écrasée"
+ canada_rebellion_crushed_desc: "Le soulèvement du Canada contre la Grande-Bretagne a échoué. Une nouvelle tentative devra attendre."
 
  rule_canada_start: "Départ canadien"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Conférence de la Confédération#!#!"

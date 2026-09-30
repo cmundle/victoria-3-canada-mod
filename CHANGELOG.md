@@ -6,6 +6,8 @@
 - New Canadian Start game rule to skip the conference and keep the base game start.
 - Independence, by accord or by war, grants the Colonization technology and enacts Frontier Colonization.
 - National Identity bar on the Path to Sovereignty. It fills monthly from literacy, voting rights, GDP, standard of living and rank, and the Newfoundland deal needs 50.
+- While Canada waits, London and the reformers push back through random events that move National Identity.
+- Hard break aftermath: a victory event with a choice of pride or reconciliation, and a defeat event that costs National Identity and locks out another rising for ten years.
 - French localization.
 - Testing checklist in the README.
 
