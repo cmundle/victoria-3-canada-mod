@@ -18,18 +18,27 @@ Known gaps:
 
 - Waiting has no consequences, so the journal entry just sits there.
 - The hard break has no aftermath events, whether Canada wins or loses.
-- Everything is English only, which is odd for a Canadian mod.
-- No way to keep the vanilla start.
 
 ## Phase 0: Foundations (1.4)
 
 Groundwork that makes every later phase easier.
 
-- [ ] Audit vanilla 1.13 for Canadian content (formable, events, journal entries, characters) that could clash with day-one Confederation, and note anything to disable or hook into.
-- [ ] Write a short test checklist in the README: new game as Upper Canada, each sovereignty option, `error.log` clean, `CANADA MOD:` lines in `debug.log`.
-- [ ] Add a game rule to keep the vanilla start instead of day-one Confederation.
-- [ ] Add a French localization file (`localization/french/`) mirroring the English keys, even if some lines start as placeholders.
+- [x] Audit vanilla 1.13 for Canadian content (formable, events, journal entries, characters) that could clash with day-one Confederation, and note anything to disable or hook into.
+- [x] Write a short test checklist in the README: new game as Upper Canada, each sovereignty option, `error.log` clean, `CANADA MOD:` lines in `debug.log`.
+- [x] Add a game rule to keep the vanilla start instead of day-one Confederation.
+- [x] Add a French localization file (`localization/french/`) mirroring the English keys.
 - [ ] Decide whether the hard break button should require Britain to be at peace, like the accord button does.
+
+## Vanilla notes (1.13.11)
+
+Findings from the Phase 0 audit of the base game files:
+
+- **Unite Canada journal entry** (`je_canada_can`, `can_aus` events). Shown to any Canadian dominion once Nationalism is researched, so our Canada gets it on day one. It completes when Canada owns every state in greater Canada apart from Newfoundland and the Oregon Country states, which still means absorbing the Indigenous nations of the west. It rewards the `can_unified_canada` modifier and names Ottawa, and it disappears on independence. It complements the mod rather than clashing, so leave it alone.
+- **Britain's version** (`je_canada_gbr`) needs two or more Canadian subjects, so it never shows once Confederation happens on day one.
+- **Canadian Pacific Railway** (`je_canada_pacific_railway`) already exists as a major railway journal entry. The Phase 3 railway task should hook into it rather than rebuild it.
+- **Canada is a vanilla formable** (`country_formation`), which is how Canada appears under the Base Game start rule.
+- **Characters.** Vanilla already has templates for Papineau, William Lyon Mackenzie, Robert Baldwin, Robert Nelson, Samuel Lount, Francis Bond Head and others, tied to Upper and Lower Canada. LaFontaine, Howe, McGee, Tupper, Alexander Mackenzie, Dumont, McClung and Mackenzie King are missing.
+- **Needs an in-game check:** whether Lower Canada's characters (Papineau, Nelson) carry over when Upper Canada annexes it on day one.
 
 ## Phase 1: A deeper road to sovereignty (1.5)
 
@@ -48,7 +57,7 @@ Make the core feature of the mod richer before adding breadth.
 - [ ] The Durham Report (1839): assimilation versus accommodation of French Canada.
 - [ ] Responsible Government (1848): Baldwin and LaFontaine's reform ministry.
 - [ ] Reciprocity Treaty (1854): a trade deal with the United States, and what happens if it lapses.
-- [ ] Characters: Louis-Joseph Papineau, William Lyon Mackenzie, Robert Baldwin, Louis-Hippolyte LaFontaine, Joseph Howe.
+- [ ] Characters: make sure vanilla's Papineau, Mackenzie, Baldwin and the other Upper and Lower Canada characters survive day-one Confederation, then add Louis-Hippolyte LaFontaine and Joseph Howe.
 - [ ] Decision: build the canals (Rideau, Welland, Lachine).
 
 ## Phase 3: Building the nation, 1860 to 1885 (1.7)
