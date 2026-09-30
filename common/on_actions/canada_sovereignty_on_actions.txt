@@ -17,6 +17,7 @@ on_yearly_pulse_country = {
 canada_early_confederation = {
 	trigger = {
 		NOT = { has_global_variable = canada_setup_done }
+		NOT = { has_game_rule = canada_start_vanilla }
 	}
 	effect = {
 		debug_log = "CANADA MOD: setup running from lobby hook"
@@ -32,6 +33,7 @@ canada_setup_fallback = {
 		exists = c:ONT
 		this = c:ONT
 		NOT = { has_global_variable = canada_setup_done }
+		NOT = { has_game_rule = canada_start_vanilla }
 	}
 	effect = {
 		debug_log = "CANADA MOD: setup running from monthly fallback"

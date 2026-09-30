@@ -24,3 +24,9 @@
 
  canada_anglo_canadian_accord: "Anglo-Canadian Accord"
  canada_anglo_canadian_accord_desc: "Canada and the United Kingdom parted as equals and remain close partners."
+
+ rule_canada_start: "Canadian Start"
+ setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Day-One Confederation#!#!"
+ setting_canada_start_confederation_desc: "Upper Canada unites British North America on the first day of the game and faces the question of sovereignty at once."
+ setting_canada_start_vanilla: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_vanilla_desc Base Game#!#!"
+ setting_canada_start_vanilla_desc: "British North America starts divided, as in the base game. The Path to Sovereignty opens once Canada forms."

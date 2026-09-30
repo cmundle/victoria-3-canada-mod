@@ -1,0 +1,10 @@
+﻿# Day-one Confederation, or the base game's divided British North America
+canada_start = {
+	default = canada_start_confederation
+
+	canada_start_confederation = {
+	}
+
+	canada_start_vanilla = {
+	}
+}
