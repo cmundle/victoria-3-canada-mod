@@ -1,6 +1,6 @@
 ﻿l_english:
  canada_sovereignty.1.t: "The Question of Sovereignty"
- canada_sovereignty.1.d: "From the Maritimes to Rupert's Land and the Columbia District, British North America now answers to a single government in Ottawa. Some in Parliament argue that a united Canada has outgrown its place under Westminster and should chart its own course. Others warn that without British protection, the Dominion stands alone beside an ambitious republic to the south. For now, London has signalled that it is willing to talk."
+ canada_sovereignty.1.d: "From the Maritimes to Rupert's Land and the Columbia District, British North America now answers to a single government. Some in Parliament argue that a united Canada has outgrown its place under Westminster and should chart its own course. Others warn that without British protection, the Dominion stands alone beside an ambitious republic to the south. For now, London has signalled that it is willing to talk."
  canada_sovereignty.1.f: "Peace, order, and good government. The only question is whose."
  canada_sovereignty.1.a: "We will revisit this in time."
  canada_sovereignty.1.b: "Open negotiations with London."
@@ -12,6 +12,14 @@
  canada_sovereignty.2.a: "A clean and friendly parting."
  canada_sovereignty.2.b: "Newfoundland joins Confederation."
  canada_sovereignty.2.c: "We are not ready to sign."
+
+ canada_sovereignty.3.t: "The Confederation Conference"
+ canada_sovereignty.3.d: "Delegates from Upper and Lower Canada, New Brunswick and Nova Scotia, with envoys of the Hudson's Bay Company and the Columbia District, have agreed to meet and discuss a union of British North America. London will not stand in the way. Where the conference sits matters: the host city is likely to become the capital of whatever emerges. The delegates may also go home with nothing agreed, and the colonies will carry on as they are."
+ canada_sovereignty.3.f: "Every colony arrived with its own grievances. The question is whether they leave with a country."
+ canada_sovereignty.3.a: "Meet in Ottawa, on the border of the two Canadas."
+ canada_sovereignty.3.b: "Meet in Quebec City, the oldest capital on the continent."
+ canada_sovereignty.3.c: "Meet in Halifax, gateway to the Atlantic."
+ canada_sovereignty.3.d: "The colonies are not ready for union."
 
  je_canadian_sovereignty: "Path to Sovereignty"
  je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right."
@@ -25,7 +33,7 @@
  canada_anglo_canadian_accord_desc: "Canada and the United Kingdom parted as equals and remain close partners."
 
  rule_canada_start: "Canadian Start"
- setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Day-One Confederation#!#!"
- setting_canada_start_confederation_desc: "Upper Canada unites British North America on the first day of the game and faces the question of sovereignty at once."
+ setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Confederation Conference#!#!"
+ setting_canada_start_confederation_desc: "On the first day of the game, Upper Canada calls a conference to unite British North America. Accept and Canada faces the question of sovereignty at once."
  setting_canada_start_vanilla: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_vanilla_desc Base Game#!#!"
  setting_canada_start_vanilla_desc: "British North America starts divided, as in the base game. The Path to Sovereignty opens once Canada forms."

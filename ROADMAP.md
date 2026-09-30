@@ -8,7 +8,7 @@ Each phase is a release. Tick a box when the task is merged. Pick the next untic
 
 Built and working:
 
-- Day-one Confederation from Upper Canada, with Lower Canada, New Brunswick, Nova Scotia, Rupert's Land and the Columbia District.
+- Day-one Confederation from Upper Canada (now the Confederation Conference, see Phase 0), with Lower Canada, New Brunswick, Nova Scotia, Rupert's Land and the Columbia District.
 - The sovereignty event: wait, negotiate, or break away by force.
 - The Anglo-Canadian Accord: alliance, trade privileges, truce, power bloc membership and yearly relations upkeep.
 - The Newfoundland option.
@@ -27,13 +27,15 @@ Groundwork that makes every later phase easier.
 - [x] Write a short test checklist in the README: new game as Upper Canada, each sovereignty option, `error.log` clean, `CANADA MOD:` lines in `debug.log`.
 - [x] Add a game rule to keep the vanilla start instead of day-one Confederation.
 - [x] Add a French localization file (`localization/french/`) mirroring the English keys.
+- [x] Replace the automatic day-one merge with a Confederation Conference event: host in Ottawa, Quebec City or Halifax (the host city becomes the capital), or decline for the base game start.
+- [x] Hide vanilla's Unite Canada journal entry once Confederation happens, via an override of `je_canada_can`.
 - [x] Decide whether the hard break button should require Britain to be at peace. Decided no: breaking away while Britain is at war stays an option.
 
 ## Vanilla notes (1.13.11)
 
 Findings from the Phase 0 audit of the base game files:
 
-- **Unite Canada journal entry** (`je_canada_can`, `can_aus` events). Shown to any Canadian dominion once Nationalism is researched, so our Canada gets it on day one. It completes when Canada owns every state in greater Canada apart from Newfoundland and the Oregon Country states, which still means absorbing the Indigenous nations of the west. It rewards the `can_unified_canada` modifier and names Ottawa, and it disappears on independence. It complements the mod rather than clashing, so leave it alone.
+- **Unite Canada journal entry** (`je_canada_can`, `can_aus` events). Shown to any Canadian dominion once Nationalism is researched, so our Canada gets it on day one. It completes when Canada owns every state in greater Canada apart from Newfoundland and the Oregon Country states, which still means absorbing the Indigenous nations of the west. It rewards the `can_unified_canada` modifier and names Ottawa, and it disappears on independence. A playtest showed it lingering next to the Path to Sovereignty, so the mod now overrides it to hide once the conference unites Canada. It still appears if the player declines.
 - **Britain's version** (`je_canada_gbr`) needs two or more Canadian subjects, so it never shows once Confederation happens on day one.
 - **Canadian Pacific Railway** (`je_canada_pacific_railway`) already exists as a major railway journal entry. The Phase 3 railway task should hook into it rather than rebuild it.
 - **Canada is a vanilla formable** (`country_formation`), which is how Canada appears under the Base Game start rule.

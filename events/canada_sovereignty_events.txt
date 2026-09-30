@@ -90,3 +90,61 @@ canada_sovereignty.2 = {
 		ai_chance = { base = 0 }
 	}
 }
+
+# The Confederation Conference, fired to Upper Canada on day one.
+# The host city becomes the capital; declining keeps the base game start.
+canada_sovereignty.3 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.3.t
+	desc = canada_sovereignty.3.d
+	flavor = canada_sovereignty.3.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	# Ottawa: the capital stays in Ontario, and Bytown takes its new name
+	option = {
+		name = canada_sovereignty.3.a
+		default_option = yes
+		canada_early_confederation_setup = yes
+		s:STATE_ONTARIO = {
+			random_scope_state = {
+				limit = { owner = root }
+				set_hub_name = {
+					type = city
+					name = HUB_NAME_STATE_ONTARIO_city_ottawa
+				}
+			}
+		}
+		ai_chance = { base = 70 }
+	}
+
+	# Quebec City
+	option = {
+		name = canada_sovereignty.3.b
+		canada_early_confederation_setup = yes
+		set_capital = STATE_QUEBEC
+		ai_chance = { base = 20 }
+	}
+
+	# Halifax
+	option = {
+		name = canada_sovereignty.3.c
+		canada_early_confederation_setup = yes
+		set_capital = STATE_NEW_BRUNSWICK
+		ai_chance = { base = 10 }
+	}
+
+	# Decline: British North America stays divided, as in the base game
+	option = {
+		name = canada_sovereignty.3.d
+		ai_chance = { base = 0 }
+	}
+}

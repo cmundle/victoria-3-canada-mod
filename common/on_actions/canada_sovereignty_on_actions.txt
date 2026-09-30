@@ -20,14 +20,14 @@ canada_early_confederation = {
 		NOT = { has_game_rule = canada_start_vanilla }
 	}
 	effect = {
-		debug_log = "CANADA MOD: setup running from lobby hook"
+		debug_log = "CANADA MOD: conference called from lobby hook"
 		set_global_variable = canada_setup_done
-		canada_early_confederation_setup = yes
+		c:ONT ?= { trigger_event = { id = canada_sovereignty.3 } }
 	}
 }
 
-# Fallback: if the lobby hook never fired, Upper Canada runs the setup
-# on its first monthly pulse instead
+# Fallback: if the lobby hook never fired, Upper Canada gets the
+# conference on its first monthly pulse instead
 canada_setup_fallback = {
 	trigger = {
 		exists = c:ONT
@@ -36,9 +36,9 @@ canada_setup_fallback = {
 		NOT = { has_game_rule = canada_start_vanilla }
 	}
 	effect = {
-		debug_log = "CANADA MOD: setup running from monthly fallback"
+		debug_log = "CANADA MOD: conference called from monthly fallback"
 		set_global_variable = canada_setup_done
-		canada_early_confederation_setup = yes
+		trigger_event = { id = canada_sovereignty.3 }
 	}
 }
 

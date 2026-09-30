@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4 (in progress)
+- The Confederation Conference: on day one, Upper Canada picks Ottawa, Quebec City or Halifax to host, and that city becomes the capital. Declining keeps the base game start.
+- The base game's Unite Canada journal entry is hidden once Confederation happens.
+- New Canadian Start game rule to skip the conference and keep the base game start.
+- French localization.
+- Testing checklist in the README.
+
 ## 1.3
 - Accord now creates real treaties: a ten-year alliance and mutual trade privileges.
 - Canada stays in Britain's power bloc after a negotiated independence.

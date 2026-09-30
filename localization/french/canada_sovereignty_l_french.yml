@@ -1,6 +1,6 @@
 ﻿l_french:
  canada_sovereignty.1.t: "La question de la souveraineté"
- canada_sovereignty.1.d: "Des Maritimes à la Terre de Rupert et au district de Columbia, l'Amérique du Nord britannique relève désormais d'un seul gouvernement à Ottawa. Certains parlementaires soutiennent qu'un Canada uni a dépassé sa place sous Westminster et doit tracer sa propre voie. D'autres préviennent que, sans la protection britannique, le Dominion se retrouverait seul face à une république ambitieuse au sud. Pour l'instant, Londres a fait savoir qu'elle est prête à discuter."
+ canada_sovereignty.1.d: "Des Maritimes à la Terre de Rupert et au district de Columbia, l'Amérique du Nord britannique relève désormais d'un seul gouvernement. Certains parlementaires soutiennent qu'un Canada uni a dépassé sa place sous Westminster et doit tracer sa propre voie. D'autres préviennent que, sans la protection britannique, le Dominion se retrouverait seul face à une république ambitieuse au sud. Pour l'instant, Londres a fait savoir qu'elle est prête à discuter."
  canada_sovereignty.1.f: "Paix, ordre et bon gouvernement. Reste à savoir lequel."
  canada_sovereignty.1.a: "Nous y reviendrons en temps voulu."
  canada_sovereignty.1.b: "Ouvrir des négociations avec Londres."
@@ -12,6 +12,14 @@
  canada_sovereignty.2.a: "Une séparation nette et amicale."
  canada_sovereignty.2.b: "Terre-Neuve se joint à la Confédération."
  canada_sovereignty.2.c: "Nous ne sommes pas prêts à signer."
+
+ canada_sovereignty.3.t: "La conférence de la Confédération"
+ canada_sovereignty.3.d: "Les délégués du Haut et du Bas-Canada, du Nouveau-Brunswick et de la Nouvelle-Écosse, accompagnés d'envoyés de la Compagnie de la Baie d'Hudson et du district de Columbia, ont accepté de se réunir pour discuter d'une union de l'Amérique du Nord britannique. Londres ne s'y opposera pas. Le lieu de la conférence compte : la ville hôte deviendra sans doute la capitale de ce qui en sortira. Les délégués pourraient aussi repartir sans entente, et les colonies continueraient comme avant."
+ canada_sovereignty.3.f: "Chaque colonie est arrivée avec ses propres griefs. Reste à savoir si elles repartiront avec un pays."
+ canada_sovereignty.3.a: "Se réunir à Ottawa, à la frontière des deux Canadas."
+ canada_sovereignty.3.b: "Se réunir à Québec, la plus ancienne capitale du continent."
+ canada_sovereignty.3.c: "Se réunir à Halifax, porte de l'Atlantique."
+ canada_sovereignty.3.d: "Les colonies ne sont pas prêtes pour l'union."
 
  je_canadian_sovereignty: "La voie de la souveraineté"
  je_canadian_sovereignty_reason: "Le Canada demeure un dominion du Royaume-Uni. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu."
@@ -25,7 +33,7 @@
  canada_anglo_canadian_accord_desc: "Le Canada et le Royaume-Uni se sont séparés en égaux et demeurent de proches partenaires."
 
  rule_canada_start: "Départ canadien"
- setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Confédération dès le premier jour#!#!"
- setting_canada_start_confederation_desc: "Le Haut-Canada unit l'Amérique du Nord britannique dès le premier jour de la partie et fait aussitôt face à la question de la souveraineté."
+ setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Conférence de la Confédération#!#!"
+ setting_canada_start_confederation_desc: "Dès le premier jour de la partie, le Haut-Canada convoque une conférence pour unir l'Amérique du Nord britannique. Si elle aboutit, le Canada fait aussitôt face à la question de la souveraineté."
  setting_canada_start_vanilla: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_vanilla_desc Jeu de base#!#!"
  setting_canada_start_vanilla_desc: "L'Amérique du Nord britannique commence divisée, comme dans le jeu de base. La voie de la souveraineté s'ouvre une fois le Canada formé."

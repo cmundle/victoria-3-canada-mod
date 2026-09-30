@@ -1,10 +1,12 @@
-﻿# Scope: none (runs from on_game_started_after_lobby)
+﻿# Scope: any (runs from the conference event)
 canada_early_confederation_setup = {
 	if = {
 		limit = { exists = c:ONT }
 		c:ONT = {
 			# Saved scope survives the tag change below
 			save_scope_as = new_canada
+			# Hides the vanilla Unite Canada journal entry
+			set_variable = canada_confederated
 
 			if = { limit = { exists = c:QUE } annex = c:QUE }
 			if = { limit = { exists = c:NBS } annex = c:NBS }
