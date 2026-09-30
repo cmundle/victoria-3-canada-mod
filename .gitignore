@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# Editors and IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.swp
+*.swo
+*.bak
+*.tmp
+.history/
+
+# Victoria 3 / Paradox mod build and upload output
+*.zip
+*.7z
+*.rar
+build/
+dist/
+upload/
+workshop/
+
+# Logs and crash dumps
+*.log
+logs/
+crashes/
+*.dmp
+*.mdmp
