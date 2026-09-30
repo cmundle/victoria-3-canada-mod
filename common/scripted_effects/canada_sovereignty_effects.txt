@@ -1,0 +1,106 @@
+﻿# Scope: none (runs from on_game_started_after_lobby)
+canada_early_confederation_setup = {
+	if = {
+		limit = { exists = c:ONT }
+		c:ONT = {
+			# Saved scope survives the tag change below
+			save_scope_as = new_canada
+
+			if = { limit = { exists = c:QUE } annex = c:QUE }
+			if = { limit = { exists = c:NBS } annex = c:NBS }
+			if = { limit = { exists = c:NVS } annex = c:NVS }
+			# Rupert's Land and the Columbia District
+			if = { limit = { exists = c:HBC } annex = c:HBC }
+			if = { limit = { exists = c:ORG } annex = c:ORG }
+
+			add_technology_researched = nationalism
+
+			if = {
+				limit = { NOT = { is_subject_type = subject_type_dominion } }
+				change_subject_type = subject_type_dominion
+			}
+
+			debug_log = "CANADA MOD: annexations done, changing tag"
+			change_tag = CAN
+		}
+		debug_log = "CANADA MOD: tag change done"
+		scope:new_canada = {
+			trigger_event = { id = canada_sovereignty.1 days = 7 }
+		}
+	}
+}
+
+# Scope: Canada. Hands Newfoundland over if Britain still holds all of it.
+canada_gain_newfoundland = {
+	if = {
+		limit = { c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND } }
+		s:STATE_NEWFOUNDLAND.region_state:GBR = {
+			set_state_owner = root
+		}
+	}
+}
+
+# Scope: Canada
+canada_negotiated_independence = {
+	make_independent = yes
+	set_variable = canada_accord_signed
+	add_modifier = { name = canada_anglo_canadian_accord }
+
+	# Undo the "you left us" hit that independence causes
+	change_relations = { country = c:GBR value = 100 }
+	create_diplomatic_catalyst = { type = catalyst_event_positive target = c:GBR }
+	c:GBR = { create_diplomatic_catalyst = { type = catalyst_event_positive target = root } }
+
+	# A Commonwealth of sorts: stay in Britain's power bloc
+	if = {
+		limit = { c:GBR = { is_power_bloc_leader = yes } }
+		join_power_bloc = c:GBR
+	}
+
+	# Separate treaties so one failing can't block the other
+	create_treaty = {
+		first_country = c:GBR
+		second_country = root
+		is_draft = no
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{ article = alliance }
+		}
+	}
+	create_treaty = {
+		first_country = c:GBR
+		second_country = root
+		is_draft = no
+		binding_period = { years = 10 }
+		articles_to_create = {
+			{
+				article = trade_privilege
+				source_country = c:GBR
+				target_country = root
+			}
+			{
+				article = trade_privilege
+				source_country = root
+				target_country = c:GBR
+			}
+		}
+	}
+
+	# Ten years in which neither side can attack the other
+	c:GBR = {
+		create_bidirectional_truce = { country = root months = 120 }
+	}
+	debug_log = "CANADA MOD: accord signed"
+}
+
+# Scope: Canada
+canada_hard_break = {
+	change_relations = {
+		country = c:GBR
+		value = -50
+	}
+	create_diplomatic_play = {
+		target_country = c:GBR
+		type = dp_independence
+	}
+}

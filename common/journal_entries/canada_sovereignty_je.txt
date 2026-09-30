@@ -1,0 +1,18 @@
+﻿je_canadian_sovereignty = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	group = je_group_foreign_affairs
+
+	scripted_button = canada_negotiate_accord_button
+	scripted_button = canada_break_hard_button
+
+	# Completes however independence happens (accord or winning the war)
+	complete = {
+		is_subject = no
+	}
+
+	invalid = {
+		NOT = { exists = c:GBR }
+	}
+
+	weight = 100
+}

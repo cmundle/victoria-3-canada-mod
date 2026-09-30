@@ -1,0 +1,26 @@
+﻿l_english:
+ canada_sovereignty.1.t: "The Question of Sovereignty"
+ canada_sovereignty.1.d: "From the Maritimes to Rupert's Land and the Columbia District, British North America now answers to a single government in Ottawa. Some in Parliament argue that a united Canada has outgrown its place under Westminster and should chart its own course. Others warn that without British protection, the Dominion stands alone beside an ambitious republic to the south. For now, London has signalled that it is willing to talk."
+ canada_sovereignty.1.f: "Peace, order, and good government. The only question is whose."
+ canada_sovereignty.1.a: "We will revisit this in time."
+ canada_sovereignty.1.b: "Open negotiations with London."
+ canada_sovereignty.1.c: "Canada will take its independence."
+
+ canada_sovereignty.2.t: "Terms of the Accord"
+ canada_sovereignty.2.d: "Our delegation has arrived in London. The Colonial Office is prepared to grant Canada full sovereignty in exchange for a lasting partnership. Some of our delegates believe we can press for more, and that Newfoundland's future lies with Canada rather than as a lonely outpost of the Empire."
+ canada_sovereignty.2.f: "A nation is not only declared. It is negotiated, line by line."
+ canada_sovereignty.2.a: "A clean and friendly parting."
+ canada_sovereignty.2.b: "Newfoundland joins Confederation."
+ canada_sovereignty.2.c: "We are not ready to sign."
+
+ je_canadian_sovereignty: "Path to Sovereignty"
+ je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right."
+ je_canadian_sovereignty_goal: "Canada is no longer a subject of another nation."
+
+ canada_negotiate_accord_button: "Negotiate the Anglo-Canadian Accord"
+ canada_negotiate_accord_button_desc: "Send a delegation to London to secure a peaceful independence. Canada stays in Britain's sphere, with a ten-year alliance, mutual trade privileges, and a truce between the two nations."
+ canada_break_hard_button: "Declare Independence"
+ canada_break_hard_button_desc: "Break with London by force. Britain will not take this lightly."
+
+ canada_anglo_canadian_accord: "Anglo-Canadian Accord"
+ canada_anglo_canadian_accord_desc: "Canada and the United Kingdom parted as equals and remain close partners."

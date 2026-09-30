@@ -1,0 +1,12 @@
+{
+  "name": "Victoria 3 Canada Mod",
+  "id": "victoria-3-canada-mod",
+  "version": "1.3",
+  "supported_game_version": "1.13.*",
+  "short_description": "Unites Canada from day one in 1836 and lets you choose your path to sovereignty: wait, negotiate an accord with Britain, or break away by force. Includes Rupert's Land, the Columbia District and a Newfoundland deal.",
+  "tags": ["Historical", "Events"],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
+  }
+}

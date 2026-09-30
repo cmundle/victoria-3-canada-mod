@@ -1,0 +1,40 @@
+﻿canada_negotiate_accord_button = {
+	name = "canada_negotiate_accord_button"
+	desc = "canada_negotiate_accord_button_desc"
+
+	visible = {
+		is_subject_of = c:GBR
+	}
+	possible = {
+		is_at_war = no
+		c:GBR = { is_at_war = no }
+	}
+
+	effect = {
+		trigger_event = { id = canada_sovereignty.2 }
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+
+canada_break_hard_button = {
+	name = "canada_break_hard_button"
+	desc = "canada_break_hard_button_desc"
+
+	visible = {
+		is_subject_of = c:GBR
+	}
+	possible = {
+		is_at_war = no
+	}
+
+	effect = {
+		canada_hard_break = yes
+	}
+
+	ai_chance = {
+		value = 2
+	}
+}

@@ -1,0 +1,92 @@
+﻿namespace = canada_sovereignty
+
+# The opening question, fired in the first month
+canada_sovereignty.1 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.1.t
+	desc = canada_sovereignty.1.d
+	flavor = canada_sovereignty.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	immediate = {
+		set_variable = canada_sovereignty_fired
+		# The journal entry is added no matter what you pick. It closes
+		# itself once Canada is independent, so it only lingers if you
+		# wait or if a war of independence fails.
+		add_journal_entry = { type = je_canadian_sovereignty }
+	}
+
+	option = {
+		name = canada_sovereignty.1.a
+		default_option = yes
+		ai_chance = { base = 50 }
+	}
+
+	option = {
+		name = canada_sovereignty.1.b
+		trigger_event = { id = canada_sovereignty.2 }
+		ai_chance = { base = 40 }
+	}
+
+	option = {
+		name = canada_sovereignty.1.c
+		canada_hard_break = yes
+		ai_chance = { base = 10 }
+	}
+}
+
+# Terms of the accord, reached from the event or the journal button
+canada_sovereignty.2 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.2.t
+	desc = canada_sovereignty.2.d
+	flavor = canada_sovereignty.2.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	# Standard accord
+	option = {
+		name = canada_sovereignty.2.a
+		default_option = yes
+		canada_negotiated_independence = yes
+		ai_chance = { base = 50 }
+	}
+
+	# Accord plus Newfoundland, at the cost of some goodwill
+	option = {
+		name = canada_sovereignty.2.b
+		trigger = {
+			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
+		}
+		canada_gain_newfoundland = yes
+		canada_negotiated_independence = yes
+		change_relations = {
+			country = c:GBR
+			value = -20
+		}
+		ai_chance = { base = 50 }
+	}
+
+	# Walk away for now; the journal entry stays open
+	option = {
+		name = canada_sovereignty.2.c
+		ai_chance = { base = 0 }
+	}
+}
