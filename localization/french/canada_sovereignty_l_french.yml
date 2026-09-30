@@ -1,0 +1,32 @@
+﻿l_french:
+ canada_sovereignty.1.t: "La question de la souveraineté"
+ canada_sovereignty.1.d: "Des Maritimes à la Terre de Rupert et au district de Columbia, l'Amérique du Nord britannique relève désormais d'un seul gouvernement à Ottawa. Certains parlementaires soutiennent qu'un Canada uni a dépassé sa place sous Westminster et doit tracer sa propre voie. D'autres préviennent que, sans la protection britannique, le Dominion se retrouverait seul face à une république ambitieuse au sud. Pour l'instant, Londres a fait savoir qu'elle est prête à discuter."
+ canada_sovereignty.1.f: "Paix, ordre et bon gouvernement. Reste à savoir lequel."
+ canada_sovereignty.1.a: "Nous y reviendrons en temps voulu."
+ canada_sovereignty.1.b: "Ouvrir des négociations avec Londres."
+ canada_sovereignty.1.c: "Le Canada prendra son indépendance."
+
+ canada_sovereignty.2.t: "Les termes de l'accord"
+ canada_sovereignty.2.d: "Notre délégation est arrivée à Londres. Le ministère des Colonies est prêt à accorder au Canada sa pleine souveraineté en échange d'un partenariat durable. Certains de nos délégués croient que nous pouvons exiger davantage, et que l'avenir de Terre-Neuve est au sein du Canada plutôt que comme avant-poste isolé de l'Empire."
+ canada_sovereignty.2.f: "Une nation ne se proclame pas seulement. Elle se négocie, ligne par ligne."
+ canada_sovereignty.2.a: "Une séparation nette et amicale."
+ canada_sovereignty.2.b: "Terre-Neuve se joint à la Confédération."
+ canada_sovereignty.2.c: "Nous ne sommes pas prêts à signer."
+
+ je_canadian_sovereignty: "La voie de la souveraineté"
+ je_canadian_sovereignty_reason: "Le Canada demeure un dominion du Royaume-Uni. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu."
+ je_canadian_sovereignty_goal: "Le Canada n'est plus le sujet d'une autre nation."
+
+ canada_negotiate_accord_button: "Négocier l'Accord anglo-canadien"
+ canada_negotiate_accord_button_desc: "Envoyer une délégation à Londres pour obtenir une indépendance pacifique. Le Canada reste dans la sphère britannique, avec une alliance de dix ans, des privilèges commerciaux mutuels et une trêve entre les deux nations."
+ canada_break_hard_button: "Déclarer l'indépendance"
+ canada_break_hard_button_desc: "Rompre avec Londres par la force. La Grande-Bretagne ne le prendra pas à la légère."
+
+ canada_anglo_canadian_accord: "Accord anglo-canadien"
+ canada_anglo_canadian_accord_desc: "Le Canada et le Royaume-Uni se sont séparés en égaux et demeurent de proches partenaires."
+
+ rule_canada_start: "Départ canadien"
+ setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Confédération dès le premier jour#!#!"
+ setting_canada_start_confederation_desc: "Le Haut-Canada unit l'Amérique du Nord britannique dès le premier jour de la partie et fait aussitôt face à la question de la souveraineté."
+ setting_canada_start_vanilla: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_vanilla_desc Jeu de base#!#!"
+ setting_canada_start_vanilla_desc: "L'Amérique du Nord britannique commence divisée, comme dans le jeu de base. La voie de la souveraineté s'ouvre une fois le Canada formé."
