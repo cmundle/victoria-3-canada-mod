@@ -27,7 +27,7 @@ Groundwork that makes every later phase easier.
 - [x] Write a short test checklist in the README: new game as Upper Canada, each sovereignty option, `error.log` clean, `CANADA MOD:` lines in `debug.log`.
 - [x] Add a game rule to keep the vanilla start instead of day-one Confederation.
 - [x] Add a French localization file (`localization/french/`) mirroring the English keys.
-- [ ] Decide whether the hard break button should require Britain to be at peace, like the accord button does.
+- [x] Decide whether the hard break button should require Britain to be at peace. Decided no: breaking away while Britain is at war stays an option.
 
 ## Vanilla notes (1.13.11)
 
