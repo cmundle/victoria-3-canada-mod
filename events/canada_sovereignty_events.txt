@@ -61,29 +61,44 @@ canada_sovereignty.2 = {
 
 	duration = 3
 
-	# Standard accord
+	# Standard accord. Two copies so the recommended tick lands on it only
+	# while the Newfoundland option is locked.
 	option = {
 		name = canada_sovereignty.2.a
+		trigger = {
+			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
+			je:je_canadian_sovereignty ?= {
+				"scripted_bar_progress(canada_national_identity_bar)" >= 50
+			}
+		}
 		canada_negotiated_independence = yes
 		ai_chance = { base = 40 }
 	}
-
-	# Accord plus Newfoundland, at the cost of some goodwill
 	option = {
-		name = canada_sovereignty.2.b
+		name = canada_sovereignty.2.a
 		default_option = yes
 		trigger = {
-			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
-			# London only gives ground to a Canada with a strong sense of itself
-			custom_tooltip = {
-				text = canada_identity_newfoundland_tt
+			NAND = {
+				c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
 				je:je_canadian_sovereignty ?= {
 					"scripted_bar_progress(canada_national_identity_bar)" >= 50
 				}
 			}
 		}
-		show_as_unavailable = {
+		canada_negotiated_independence = yes
+		ai_chance = { base = 40 }
+	}
+
+	# Accord plus Newfoundland, at the cost of some goodwill. London only
+	# gives ground to a Canada with a strong sense of itself.
+	option = {
+		name = canada_sovereignty.2.b
+		default_option = yes
+		trigger = {
 			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
+			je:je_canadian_sovereignty ?= {
+				"scripted_bar_progress(canada_national_identity_bar)" >= 50
+			}
 		}
 		canada_gain_newfoundland = yes
 		canada_negotiated_independence = yes
@@ -92,6 +107,22 @@ canada_sovereignty.2 = {
 			value = -20
 		}
 		ai_chance = { base = 60 }
+	}
+
+	# Locked copy of the Newfoundland option, shown greyed out below 50
+	option = {
+		name = canada_sovereignty.2.b
+		trigger = { always = no }
+		show_as_unavailable = {
+			c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND }
+			NOT = {
+				je:je_canadian_sovereignty ?= {
+					"scripted_bar_progress(canada_national_identity_bar)" >= 50
+				}
+			}
+		}
+		custom_tooltip = canada_identity_newfoundland_tt
+		ai_chance = { base = 0 }
 	}
 
 	# Walk away for now; the journal entry stays open

@@ -45,17 +45,17 @@
  canada_sovereignty.7.a: "We will bide our time."
 
  je_canadian_sovereignty: "Path to Sovereignty"
- je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right."
+ je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation."
 
  canada_national_identity_bar: "National Identity"
- canada_national_identity_bar_desc: "How strongly Canadians see themselves as one people, apart from Britain: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]#!/100. London offers better terms to a Canada that knows its own mind."
+ canada_national_identity_bar_desc: "National Identity: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]#!/100"
  canada_identity_generation_tt: "A generation growing up Canadian"
  canada_identity_literacy_tt: "[concept_literacy] of at least 30%"
  canada_identity_franchise_tt: "Canadians vote for their own government"
  canada_identity_gdp_tt: "[concept_gdp] in the top 20"
  canada_identity_sol_tt: "[concept_sol] in the top 20"
  canada_identity_rank_tt: "Canada is a Major Power or greater"
- canada_identity_newfoundland_tt: "#v National Identity#! is at least #v 50#!"
+ canada_identity_newfoundland_tt: "Requires #v National Identity#! of at least #v 50#!"
 
  canada_negotiate_accord_button: "Negotiate the Anglo-Canadian Accord"
  canada_negotiate_accord_button_desc: "Send a delegation to London to secure a peaceful independence. Canada stays in Britain's sphere, with a ten-year alliance, mutual trade privileges, and a truce between the two nations."
