@@ -61,7 +61,7 @@ Make the core feature of the mod richer before adding breadth.
 - [ ] Responsible Government (1848): Baldwin and LaFontaine's reform ministry.
 - [ ] Reciprocity Treaty (1854): a trade deal with the United States, and what happens if it lapses.
 - [ ] Characters: make sure vanilla's Papineau, Mackenzie, Baldwin and the other Upper and Lower Canada characters survive day-one Confederation, then add Louis-Hippolyte LaFontaine and Joseph Howe.
-- [ ] Decision: build the canals (Rideau, Welland, Lachine).
+- [ ] Decision: enlarge the canals (the Lachine, Welland and Rideau were already open by 1836; the 1840s deepening of the St. Lawrence and Welland canals is the real project).
 
 ## Phase 3: Building the nation, 1860 to 1885 (1.7)
 
