@@ -420,3 +420,92 @@ canada_sovereignty.9 = {
 		ai_chance = { base = 100 }
 	}
 }
+
+# Washington considers backing a Canadian rising
+canada_sovereignty.10 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.10.t
+	desc = canada_sovereignty.10.d
+	flavor = canada_sovereignty.10.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:CAN
+		c:CAN = { is_subject_of = c:GBR }
+	}
+
+	option = {
+		name = canada_sovereignty.10.a
+		default_option = yes
+		c:CAN = { trigger_event = { id = canada_sovereignty.11 } }
+		ai_chance = { base = 60 }
+	}
+
+	option = {
+		name = canada_sovereignty.10.b
+		ai_chance = { base = 40 }
+	}
+}
+
+# Canada weighs Washington's offer, and its price
+canada_sovereignty.11 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.11.t
+	desc = canada_sovereignty.11.d
+	flavor = canada_sovereignty.11.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:USA
+	}
+
+	# American arms and money, paid for with American access to our markets
+	option = {
+		name = canada_sovereignty.11.a
+		default_option = yes
+		add_modifier = { name = canada_american_backing days = 1825 }
+		create_treaty = {
+			first_country = root
+			second_country = c:USA
+			is_draft = no
+			binding_period = { years = 10 }
+			articles_to_create = {
+				{
+					article = trade_privilege
+					source_country = root
+					target_country = c:USA
+				}
+			}
+		}
+		change_relations = { country = c:USA value = 20 }
+		change_relations = { country = c:GBR value = -10 }
+		ai_chance = { base = 70 }
+	}
+
+	# Canada stands on its own
+	option = {
+		name = canada_sovereignty.11.b
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = 5 name = canada_national_identity_bar }
+		}
+		ai_chance = { base = 30 }
+	}
+}

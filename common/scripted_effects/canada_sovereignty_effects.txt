@@ -106,6 +106,17 @@ canada_hard_break = {
 		target_country = c:GBR
 		type = dp_independence
 	}
+	# Washington weighs in, unless it is tied to London
+	if = {
+		limit = {
+			exists = c:USA
+			c:USA = {
+				is_subject = no
+				NOT = { is_in_same_power_bloc = c:GBR }
+			}
+		}
+		c:USA = { trigger_event = { id = canada_sovereignty.10 days = 7 } }
+	}
 }
 
 # Scope: Canada. Asks London for the accord; Britain answers in

@@ -55,6 +55,18 @@
  canada_sovereignty.9.f: "Une porte fermée au nez reste une porte dont on connaît l'existence."
  canada_sovereignty.9.a: "Alors nous trouverons un autre chemin."
 
+ canada_sovereignty.10.t: "Le Canada se soulève contre la Grande-Bretagne"
+ canada_sovereignty.10.d: "Le Canada a déclaré son indépendance de l'Empire britannique. Ses dirigeants ont discrètement demandé si les États-Unis lui apporteraient leur soutien : des armes, de l'argent, peut-être des volontaires. Une république amie au nord ne serait pas une mince affaire, et le Canada est prêt à ouvrir ses marchés en retour. La Grande-Bretagne ne nous remerciera pas de cette ingérence."
+ canada_sovereignty.10.f: "Toute république fut un jour une colonie qui en avait assez."
+ canada_sovereignty.10.a: "Offrir notre soutien au Canada."
+ canada_sovereignty.10.b: "C'est une querelle au sein de la famille britannique."
+
+ canada_sovereignty.11.t: "Une offre de Washington"
+ canada_sovereignty.11.d: "Les États-Unis offrent d'appuyer notre cause avec des armes et de l'argent. Le prix est clair : dix ans d'accès privilégié aux marchés canadiens pour les marchands américains. Certains parlementaires accueillent volontiers tout allié contre la Grande-Bretagne. D'autres craignent qu'échapper à l'emprise d'un empire pour tomber sous celle d'un voisin ne soit pas une victoire."
+ canada_sovereignty.11.f: "Méfiez-vous des voisins qui apportent des cadeaux."
+ canada_sovereignty.11.a: "Accepter le soutien américain."
+ canada_sovereignty.11.b: "Le Canada gagnera seul."
+
  je_canadian_sovereignty: "La voie de la souveraineté"
  je_canadian_sovereignty_reason: "Le Canada demeure un dominion du Royaume-Uni. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu.\n\n#b L'identité nationale#! progresse un peu chaque mois, et plus vite avec une [concept_literacy] d'au moins 30 %, le droit de vote, un [concept_gdp] ou un [concept_sol] parmi les 20 premiers, et le statut de puissance majeure. Tenir tête à Londres et laisser parler les réformistes la renforcent aussi.\n\nElle recule quand nous cédons aux exigences de Londres, dispersons les rassemblements réformistes ou perdons une guerre d'indépendance.\n\nÀ #v 50#!, Londres envisagera de laisser Terre-Neuve se joindre à la Confédération."
 
@@ -80,6 +92,9 @@
  canada_independence_by_arms_desc: "Le Canada a gagné sa souveraineté sur le champ de bataille, et le monde l'a remarqué."
  canada_rebellion_crushed: "Rébellion écrasée"
  canada_rebellion_crushed_desc: "Le soulèvement du Canada contre la Grande-Bretagne a échoué. Une nouvelle tentative devra attendre."
+
+ canada_american_backing: "Soutien américain"
+ canada_american_backing_desc: "Les armes et l'argent des États-Unis soutiennent la lutte du Canada pour son indépendance."
 
  rule_canada_start: "Départ canadien"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Conférence de la Confédération#!#!"

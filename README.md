@@ -77,7 +77,7 @@ Run through this before merging anything:
    - **Wait:** the Path to Sovereignty journal entry appears with both buttons.
    - **Negotiate:** Britain gets A Delegation from Canada. If it receives them, Canada sees the terms; if it refuses, Canada gets London Refuses. Once the terms are signed, Canada is independent, allied to Britain, in Britain's power bloc, with trade privileges and a truce. The Newfoundland option is greyed out until National Identity reaches 50 (use the console to test it).
    - The journal entry shows a National Identity bar starting at 20 and rising each month.
-   - **Break away:** an independence diplomatic play against Britain starts. Win it and A Nation Won by Arms fires; lose or back down and The Rising Fails fires, and Declare Independence stays greyed out for ten years.
+   - **Break away:** an independence diplomatic play against Britain starts, and a week later the United States decides whether to offer support. Win it and A Nation Won by Arms fires; lose or back down and The Rising Fails fires, and Declare Independence stays greyed out for ten years.
    - Once independent by either route, Canada has the Colonization technology and the Frontier Colonization law.
 4. Decline the conference, and separately start with the **Canadian Start** rule set to **Base Game**. Both should leave British North America divided as usual, with the base game's Unite Canada journal entry.
 5. Switch the game language to French and skim the event and journal text.

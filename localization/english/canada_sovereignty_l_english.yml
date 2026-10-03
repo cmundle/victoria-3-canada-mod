@@ -55,6 +55,18 @@
  canada_sovereignty.9.f: "A door closed in our faces is still a door we know is there."
  canada_sovereignty.9.a: "Then we will find another way."
 
+ canada_sovereignty.10.t: "Canada Rises Against Britain"
+ canada_sovereignty.10.d: "Canada has declared its independence from the British Empire. Its leaders have quietly asked whether the United States would lend support: arms, money, perhaps volunteers. A friendly republic to the north would be no small prize, and Canada is willing to open its markets in return. Britain will not thank us for meddling."
+ canada_sovereignty.10.f: "Every republic was once a colony that decided it had had enough."
+ canada_sovereignty.10.a: "Offer Canada our support."
+ canada_sovereignty.10.b: "This is a quarrel within the British family."
+
+ canada_sovereignty.11.t: "An Offer from Washington"
+ canada_sovereignty.11.d: "The United States has offered to back our cause with arms and money. The price is plain: ten years of privileged access to Canadian markets for American merchants. Some in Parliament welcome any friend against Britain. Others fear that escaping one empire's grip only to fall into a neighbour's would be no victory at all."
+ canada_sovereignty.11.f: "Beware of neighbours bearing gifts."
+ canada_sovereignty.11.a: "Accept American support."
+ canada_sovereignty.11.b: "Canada will win this on its own."
+
  je_canadian_sovereignty: "Path to Sovereignty"
  je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation."
 
@@ -80,6 +92,9 @@
  canada_independence_by_arms_desc: "Canada won its sovereignty on the battlefield, and the world has taken notice."
  canada_rebellion_crushed: "Rebellion Crushed"
  canada_rebellion_crushed_desc: "Canada's rising against Britain failed. Another attempt must wait."
+
+ canada_american_backing: "American Backing"
+ canada_american_backing_desc: "Arms and money from the United States support Canada's fight for independence."
 
  rule_canada_start: "Canadian Start"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Confederation Conference#!#!"
