@@ -54,7 +54,7 @@ Edits then show up in the game on the next launch. The catch is that the game an
 | `common/on_actions/` | Day-one conference, monthly checks, yearly relations upkeep |
 | `common/scripted_effects/` | Confederation, the accord, Newfoundland, the hard break |
 | `common/game_rules/` | Confederation Conference or the base game start |
-| `common/journal_entries/` | Path to Sovereignty, and an override that hides vanilla's Unite Canada after Confederation |
+| `common/journal_entries/` | Path to Sovereignty, and a replacement of vanilla's `00_canada_australia.txt` that hides Unite Canada after Confederation |
 | `common/scripted_buttons/` | Journal entry buttons |
 | `common/static_modifiers/` | Anglo-Canadian Accord modifier |
 | `events/` | Sovereignty events |

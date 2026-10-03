@@ -85,6 +85,11 @@
  canada_break_hard_button: "Declare Independence"
  canada_break_hard_button_desc: "Break with London by force. Britain will not take this lightly."
 
+ canada_no_independence_war_tt: "Canada is not already fighting for its independence"
+ canada_accord_pending_tt: "No delegation is already waiting for London's answer"
+ canada_accord_refused_tt: "London has not refused a delegation in the last five years"
+ canada_rebellion_crushed_tt: "No rising has been crushed in the last ten years"
+
  canada_anglo_canadian_accord: "Anglo-Canadian Accord"
  canada_anglo_canadian_accord_desc: "Canada and the United Kingdom parted as equals and remain close partners."
 

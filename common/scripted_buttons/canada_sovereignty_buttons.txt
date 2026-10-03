@@ -8,8 +8,19 @@
 	possible = {
 		is_at_war = no
 		c:GBR = { is_at_war = no }
-		NOT = { has_variable = canada_accord_pending }
-		NOT = { has_variable = canada_accord_refused }
+		custom_tooltip = {
+			text = canada_no_independence_war_tt
+			NOT = { has_variable = canada_hard_break_started }
+			is_diplomatic_play_initiator = no
+		}
+		custom_tooltip = {
+			text = canada_accord_pending_tt
+			NOT = { has_variable = canada_accord_pending }
+		}
+		custom_tooltip = {
+			text = canada_accord_refused_tt
+			NOT = { has_variable = canada_accord_refused }
+		}
 	}
 
 	effect = {
@@ -30,7 +41,15 @@ canada_break_hard_button = {
 	}
 	possible = {
 		is_at_war = no
-		NOT = { has_variable = canada_rebellion_crushed }
+		custom_tooltip = {
+			text = canada_no_independence_war_tt
+			NOT = { has_variable = canada_hard_break_started }
+			is_diplomatic_play_initiator = no
+		}
+		custom_tooltip = {
+			text = canada_rebellion_crushed_tt
+			NOT = { has_variable = canada_rebellion_crushed }
+		}
 	}
 
 	effect = {

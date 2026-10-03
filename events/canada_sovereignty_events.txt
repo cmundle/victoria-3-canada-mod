@@ -53,6 +53,10 @@ canada_sovereignty.2 = {
 	desc = canada_sovereignty.2.d
 	flavor = canada_sovereignty.2.f
 
+	trigger = {
+		NOT = { has_variable = canada_hard_break_started }
+	}
+
 	event_image = {
 		video = "unspecific_signed_contract"
 	}
@@ -360,8 +364,10 @@ canada_sovereignty.8 = {
 
 	duration = 3
 
+	# Moot if Canada has taken up arms since asking
 	trigger = {
 		exists = c:CAN
+		c:CAN = { NOT = { has_variable = canada_hard_break_started } }
 	}
 
 	# Receive the delegation; Canada then chooses its terms

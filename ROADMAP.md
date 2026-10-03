@@ -28,7 +28,7 @@ Groundwork that makes every later phase easier.
 - [x] Add a game rule to keep the vanilla start instead of day-one Confederation.
 - [x] Add a French localization file (`localization/french/`) mirroring the English keys.
 - [x] Replace the automatic day-one merge with a Confederation Conference event: host in Ottawa, Quebec City or Halifax (the host city becomes the capital), or decline for the base game start.
-- [x] Hide vanilla's Unite Canada journal entry once Confederation happens, via an override of `je_canada_can`.
+- [x] Hide vanilla's Unite Canada journal entry once Confederation happens, by replacing vanilla's `00_canada_australia.txt` (vanilla keeps the first definition of a key, so a single-entry override is ignored).
 - [x] Grant the Colonization technology and enact Frontier Colonization when Canada becomes independent.
 - [x] Decide whether the hard break button should require Britain to be at peace. Decided no: breaking away while Britain is at war stays an option.
 
