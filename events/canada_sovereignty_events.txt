@@ -22,7 +22,12 @@ canada_sovereignty.1 = {
 		# The journal entry is added no matter what you pick. It closes
 		# itself once Canada is independent, so it only lingers if you
 		# wait or if a war of independence fails.
-		add_journal_entry = { type = je_canadian_sovereignty }
+		# Already added at Confederation; this covers Canada formed the
+		# base game way
+		if = {
+			limit = { NOT = { has_journal_entry = je_canadian_sovereignty } }
+			add_journal_entry = { type = je_canadian_sovereignty }
+		}
 	}
 
 	option = {

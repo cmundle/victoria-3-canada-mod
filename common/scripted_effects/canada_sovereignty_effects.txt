@@ -40,6 +40,8 @@ canada_early_confederation_setup = {
 		}
 		debug_log = "CANADA MOD: tag change done"
 		scope:new_canada = {
+			# Path to Sovereignty opens the moment Canada unites
+			add_journal_entry = { type = je_canadian_sovereignty }
 			trigger_event = { id = canada_sovereignty.1 days = 7 }
 		}
 	}
