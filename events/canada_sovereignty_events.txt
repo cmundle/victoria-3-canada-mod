@@ -452,13 +452,17 @@ canada_sovereignty.10 = {
 	option = {
 		name = canada_sovereignty.10.a
 		default_option = yes
+		debug_log = "CANADA MOD: Washington offers support"
 		c:CAN = { trigger_event = { id = canada_sovereignty.11 } }
-		ai_chance = { base = 60 }
+		ai_chance = { base = 70 }
 	}
 
+	# Canada is told either way, so the player isn't left wondering
 	option = {
 		name = canada_sovereignty.10.b
-		ai_chance = { base = 40 }
+		debug_log = "CANADA MOD: Washington stays out"
+		c:CAN = { trigger_event = { id = canada_sovereignty.12 } }
+		ai_chance = { base = 30 }
 	}
 }
 
@@ -513,5 +517,32 @@ canada_sovereignty.11 = {
 			add_progress = { value = 5 name = canada_national_identity_bar }
 		}
 		ai_chance = { base = 30 }
+	}
+}
+
+# Washington declines to get involved
+canada_sovereignty.12 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.12.t
+	desc = canada_sovereignty.12.d
+	flavor = canada_sovereignty.12.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	option = {
+		name = canada_sovereignty.12.a
+		default_option = yes
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = 5 name = canada_national_identity_bar }
+		}
+		ai_chance = { base = 100 }
 	}
 }

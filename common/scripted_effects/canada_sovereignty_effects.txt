@@ -115,6 +115,7 @@ canada_hard_break = {
 				NOT = { is_in_same_power_bloc = c:GBR }
 			}
 		}
+		debug_log = "CANADA MOD: asking Washington for support"
 		c:USA = { trigger_event = { id = canada_sovereignty.10 days = 7 } }
 	}
 }

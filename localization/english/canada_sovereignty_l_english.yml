@@ -67,8 +67,13 @@
  canada_sovereignty.11.a: "Accept American support."
  canada_sovereignty.11.b: "Canada will win this on its own."
 
+ canada_sovereignty.12.t: "Washington Stays Out"
+ canada_sovereignty.12.d: "Our envoys in Washington have been told politely but firmly that the United States will not take sides in a quarrel between Canada and Great Britain. Whatever we win, we will win alone."
+ canada_sovereignty.12.f: "Friends are easiest to find once the fighting is over."
+ canada_sovereignty.12.a: "Then Canada stands alone."
+
  je_canadian_sovereignty: "Path to Sovereignty"
- je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation."
+ je_canadian_sovereignty_reason: "Canada remains a dominion of Great Britain. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation."
 
  canada_national_identity_bar: "National Identity"
  canada_national_identity_bar_desc: "National Identity: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]#!/100"
@@ -91,7 +96,7 @@
  canada_rebellion_crushed_tt: "No rising has been crushed in the last ten years"
 
  canada_anglo_canadian_accord: "Anglo-Canadian Accord"
- canada_anglo_canadian_accord_desc: "Canada and the United Kingdom parted as equals and remain close partners."
+ canada_anglo_canadian_accord_desc: "Canada and Great Britain parted as equals and remain close partners."
 
  canada_independence_by_arms: "Independence by Arms"
  canada_independence_by_arms_desc: "Canada won its sovereignty on the battlefield, and the world has taken notice."
