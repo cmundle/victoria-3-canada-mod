@@ -80,6 +80,10 @@ canada_hard_break_failed = {
 	}
 	effect = {
 		remove_variable = canada_hard_break_started
+		if = {
+			limit = { has_variable = canada_owes_washington }
+			remove_variable = canada_owes_washington
+		}
 		trigger_event = { id = canada_sovereignty.7 }
 	}
 }

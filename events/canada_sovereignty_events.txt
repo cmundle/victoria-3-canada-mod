@@ -487,21 +487,31 @@ canada_sovereignty.11 = {
 		exists = c:USA
 	}
 
-	# American arms and money, paid for with American access to our markets
+	# American support in the war now; American access to our markets once
+	# we are free (Canada is inside Britain's market until then, so the
+	# privileges couldn't be honoured anyway)
 	option = {
 		name = canada_sovereignty.11.a
 		default_option = yes
 		add_modifier = { name = canada_american_backing days = 1825 }
+		set_variable = canada_owes_washington
+		# Support Independence brings the United States into the
+		# independence play on Canada's side
 		create_treaty = {
-			first_country = root
-			second_country = c:USA
+			first_country = c:USA
+			second_country = root
 			is_draft = no
-			binding_period = { years = 10 }
+			binding_period = { years = 5 }
 			articles_to_create = {
 				{
-					article = trade_privilege
-					source_country = root
-					target_country = c:USA
+					article = support_independence
+					source_country = c:USA
+					target_country = root
+				}
+				{
+					article = military_assistance
+					source_country = c:USA
+					target_country = root
 				}
 			}
 		}

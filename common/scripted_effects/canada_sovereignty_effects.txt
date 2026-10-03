@@ -116,7 +116,7 @@ canada_hard_break = {
 			}
 		}
 		debug_log = "CANADA MOD: asking Washington for support"
-		c:USA = { trigger_event = { id = canada_sovereignty.10 days = 7 } }
+		c:USA = { trigger_event = { id = canada_sovereignty.10 days = 1 } }
 	}
 }
 

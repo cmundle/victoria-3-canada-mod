@@ -19,6 +19,27 @@
 			limit = { has_variable = canada_hard_break_started }
 			trigger_event = { id = canada_sovereignty.6 }
 		}
+		# Washington's price, due now that Canada has its own market
+		if = {
+			limit = {
+				has_variable = canada_owes_washington
+				exists = c:USA
+			}
+			remove_variable = canada_owes_washington
+			create_treaty = {
+				first_country = root
+				second_country = c:USA
+				is_draft = no
+				binding_period = { years = 10 }
+				articles_to_create = {
+					{
+						article = trade_privilege
+						source_country = root
+						target_country = c:USA
+					}
+				}
+			}
+		}
 		add_technology_researched = colonization
 		if = {
 			limit = { has_law = law_type:law_no_colonial_affairs }
