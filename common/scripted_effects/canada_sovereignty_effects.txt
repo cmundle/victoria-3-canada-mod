@@ -17,6 +17,19 @@ canada_early_confederation_setup = {
 
 			add_technology_researched = nationalism
 
+			# The provinces that sent delegates join as full members.
+			# Rupert's Land and the Columbia District stay territories.
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ONTARIO
+						state_region = s:STATE_QUEBEC
+						state_region = s:STATE_NEW_BRUNSWICK
+					}
+				}
+				set_state_type = incorporated
+			}
+
 			if = {
 				limit = { NOT = { is_subject_type = subject_type_dominion } }
 				change_subject_type = subject_type_dominion
@@ -38,6 +51,7 @@ canada_gain_newfoundland = {
 		limit = { c:GBR = { owns_entire_state_region = STATE_NEWFOUNDLAND } }
 		s:STATE_NEWFOUNDLAND.region_state:GBR = {
 			set_state_owner = root
+			set_state_type = incorporated
 		}
 	}
 }

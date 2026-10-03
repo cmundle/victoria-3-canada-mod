@@ -72,7 +72,7 @@ Edits then show up in the game on the next launch. The catch is that the game an
 Run through this before merging anything:
 
 1. Start a new game as Upper Canada with the default game rules.
-2. The Confederation Conference fires on day one. Pick a host city and you become Canada, owning Upper and Lower Canada, New Brunswick, Nova Scotia, Rupert's Land and the Columbia District, with the capital in the host city. The base game's Unite Canada journal entry should not appear.
+2. The Confederation Conference fires on day one. Pick a host city and you become Canada, owning Upper and Lower Canada, New Brunswick, Nova Scotia, Rupert's Land and the Columbia District, with the capital in the host city. Ontario, Quebec and New Brunswick (which includes Nova Scotia) are incorporated; the western and northern territories are not. The base game's Unite Canada journal entry should not appear.
 3. The Question of Sovereignty fires within the first month. Reload and try each option:
    - **Wait:** the Path to Sovereignty journal entry appears with both buttons.
    - **Negotiate:** Britain gets A Delegation from Canada. If it receives them, Canada sees the terms; if it refuses, Canada gets London Refuses. Once the terms are signed, Canada is independent, allied to Britain, in Britain's power bloc, with trade privileges and a truce. The Newfoundland option is greyed out until National Identity reaches 50 (use the console to test it).
