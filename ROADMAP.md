@@ -52,7 +52,7 @@ Make the core feature of the mod richer before adding breadth.
 - [x] Pressure from waiting: occasional events where London tightens its grip or reformers push harder.
 - [x] Hard break aftermath events for victory (recognition, cold relations with London) and defeat (reprisals, loss of autonomy, the journal entry stays open).
 - [x] British reaction events: London now decides whether to receive Canada's delegation, and a refusal raises National Identity and locks the accord button for five years.
-- [x] American angle: when Canada declares independence, the United States may offer arms and money in exchange for ten years of trade privileges.
+- [x] American angle: Approach Washington before declaring. US support (Support Independence and Military Assistance) is paid for with trade privileges after independence, or with the Oregon Country now for a 99-year alliance after independence.
 
 ## Phase 2: The early years, 1836 to 1860 (1.6)
 

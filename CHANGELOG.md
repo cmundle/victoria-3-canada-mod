@@ -10,7 +10,7 @@
 - Hard break aftermath: a victory event with a choice of pride or reconciliation, and a defeat event that costs National Identity and locks out another rising for ten years.
 - Path to Sovereignty is pinned by default, and its description explains what raises and lowers National Identity.
 - Britain now answers Canada's request for negotiations. A refusal sours relations, raises National Identity by 10 and blocks another request for five years.
-- The American angle: when Canada declares independence, the United States may offer support (+10% army offence and defence, cheaper military goods for five years) Accepting adds Support Independence and Military Assistance treaties from the US, so it can join the war; the trade privileges only start once Canada is independent. If Washington declines, Canada is told and gains +5 National Identity.
+- The American angle: an Approach Washington button lets Canada seek US backing before declaring independence. If Washington agrees, it signs Support Independence and Military Assistance treaties, so it joins the independence war. Canada pays with ten years of trade privileges after independence, or by ceding its share of the Oregon Country (Washington, Oregon, Idaho) now for a 99-year alliance after independence. If Washington declines, Canada is told and gains +5 National Identity.
 - Player-facing text says Great Britain rather than the United Kingdom.
 - French localization.
 - Testing checklist in the README.
