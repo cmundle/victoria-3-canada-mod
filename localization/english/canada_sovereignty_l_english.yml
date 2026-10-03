@@ -72,8 +72,30 @@
  canada_sovereignty.12.f: "Friends are easiest to find once the fighting is over."
  canada_sovereignty.12.a: "Then Canada stands alone."
 
+ canada_sovereignty.13.t: "The Will of a Nation"
+ canada_sovereignty.13.d: "Whatever the quarrels between our governments, the Canadians have made their feelings unmistakable. From the Maritimes to the Pacific, they think of themselves first as Canadians, and their Parliament speaks of nothing but self-government. Cabinet must decide: let Canada go as a friend, or hold it by force and accept the war that will follow."
+ canada_sovereignty.13.f: "No empire can hold a people that has stopped believing it belongs."
+ canada_sovereignty.13.a: "Let Canada go, on the terms of the accord."
+ canada_sovereignty.13.b: "Canada stays within the Empire."
+
+ canada_sovereignty.14.t: "London Lets Us Go"
+ canada_sovereignty.14.d: "Faced with a nation that knows its own mind, London has chosen friendship over force. Canada is sovereign, on the terms of the Anglo-Canadian Accord. Bells are ringing from Halifax to the Columbia."
+ canada_sovereignty.14.f: "Some nations are won. Ours was recognized."
+ canada_sovereignty.14.a: "Long live Canada."
+
+ canada_sovereignty.15.t: "A Loyal Dominion"
+ canada_sovereignty.15.d: "Talk of independence has all but vanished. Canadians are content as subjects of the Crown, and imperial trade is paying handsomely. London is delighted. The reformers have gone quiet for now, and it will take a renewed sense of nationhood to bring the question back."
+ canada_sovereignty.15.f: "God save the Queen, and pass the timber contracts."
+ canada_sovereignty.15.a: "We are proud subjects of the Crown."
+
+ canada_sovereignty.16.t: "London Refuses the Nation"
+ canada_sovereignty.16.d: "London has refused to recognize what every Canadian already knows. The refusal has united the country as nothing else could. Volunteers are drilling in every town, and Parliament stands ready to declare independence the moment we give the word."
+ canada_sovereignty.16.f: "They would not let us go. So we will go."
+ canada_sovereignty.16.a: "Declare independence now."
+ canada_sovereignty.16.b: "Not yet. We will choose the moment."
+
  je_canadian_sovereignty: "Path to Sovereignty"
- je_canadian_sovereignty_reason: "Canada remains a dominion of Great Britain. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation."
+ je_canadian_sovereignty_reason: "Canada remains a dominion of Great Britain. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation. At #v 100#!, London must answer the will of the nation, whatever relations are like. At #v 0#!, Canada settles into the Empire and talk of independence stops until it recovers to #v 25#!."
 
  canada_national_identity_bar: "National Identity"
  canada_national_identity_bar_desc: "National Identity: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]#!/100"
@@ -109,6 +131,12 @@
  canada_rebellion_crushed: "Rebellion Crushed"
  canada_rebellion_crushed_desc: "Canada's rising against Britain failed. Another attempt must wait."
 
+
+ canada_will_of_nation: "The Will of a Nation"
+ canada_will_of_nation_desc: "London refused to let Canada go, and Canadians are ready to fight for their independence."
+ canada_loyal_dominion: "Loyal Dominion"
+ canada_loyal_dominion_desc: "Canadians are content within the Empire, and imperial trade rewards them for it."
+ canada_loyal_dominion_tt: "Canada is not a contented #v Loyal Dominion#! (raise #v National Identity#! to 25)"
 
  rule_canada_start: "Canadian Start"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Confederation Conference#!#!"

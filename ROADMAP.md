@@ -49,6 +49,7 @@ Make the core feature of the mod richer before adding breadth.
 
 - [x] National identity progress bar on the Path to Sovereignty journal entry, filled by literacy, voting rights, GDP, standard of living and rank.
 - [x] Better accord terms unlocked as national identity grows: Newfoundland needs 50.
+- [x] Both ends of the bar: The Will of a Nation at 100, A Loyal Dominion at 0.
 - [x] Pressure from waiting: occasional events where London tightens its grip or reformers push harder.
 - [x] Hard break aftermath events for victory (recognition, cold relations with London) and defeat (reprisals, loss of autonomy, the journal entry stays open).
 - [x] British reaction events: London now decides whether to receive Canada's delegation, and a refusal raises National Identity and locks the accord button for five years.

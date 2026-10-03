@@ -6,6 +6,10 @@
 		is_subject_of = c:GBR
 	}
 	possible = {
+		custom_tooltip = {
+			text = canada_loyal_dominion_tt
+			NOT = { has_variable = canada_loyal_dominion }
+		}
 		is_at_war = no
 		c:GBR = { is_at_war = no }
 		custom_tooltip = {
@@ -40,6 +44,10 @@ canada_break_hard_button = {
 		is_subject_of = c:GBR
 	}
 	possible = {
+		custom_tooltip = {
+			text = canada_loyal_dominion_tt
+			NOT = { has_variable = canada_loyal_dominion }
+		}
 		is_at_war = no
 		custom_tooltip = {
 			text = canada_no_independence_war_tt

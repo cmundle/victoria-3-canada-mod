@@ -13,6 +13,7 @@
 - Britain now answers Canada's request for negotiations. A refusal sours relations, raises National Identity by 10 and blocks another request for five years.
 - The American angle: an Approach Washington button lets Canada seek US backing before declaring independence. If Washington agrees, it signs Support Independence and Military Assistance treaties, so it joins the independence war. Canada pays with ten years of trade privileges after independence, or by ceding its share of the Oregon Country (Washington, Oregon, Idaho) now for a 99-year alliance after independence. If Washington declines, Canada is told and gains +5 National Identity.
 - Player-facing text says Great Britain rather than the United Kingdom.
+- National Identity fills at about a third of its old pace. At 100, Britain faces The Will of a Nation: grant independence on the accord's terms, or refuse and Canada may declare at once with a morale bonus. At 0, Canada becomes A Loyal Dominion: better relations and a small trade bonus, but both independence buttons lock until the bar is back to 25.
 - French localization.
 - Testing checklist in the README.
 

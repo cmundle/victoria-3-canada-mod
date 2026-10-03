@@ -72,8 +72,30 @@
  canada_sovereignty.12.f: "Les amis sont plus faciles à trouver une fois les combats terminés."
  canada_sovereignty.12.a: "Alors le Canada tiendra seul."
 
+ canada_sovereignty.13.t: "La volonté d'une nation"
+ canada_sovereignty.13.d: "Quelles que soient les querelles entre nos gouvernements, les Canadiens ont fait connaître leurs sentiments sans équivoque. Des Maritimes au Pacifique, ils se voient d'abord comme Canadiens, et leur Parlement ne parle que d'autonomie. Le Cabinet doit trancher : laisser partir le Canada en ami, ou le retenir par la force et accepter la guerre qui suivra."
+ canada_sovereignty.13.f: "Aucun empire ne peut retenir un peuple qui ne croit plus y appartenir."
+ canada_sovereignty.13.a: "Laisser partir le Canada, aux conditions de l'accord."
+ canada_sovereignty.13.b: "Le Canada reste au sein de l'Empire."
+
+ canada_sovereignty.14.t: "Londres nous laisse partir"
+ canada_sovereignty.14.d: "Face à une nation qui sait ce qu'elle veut, Londres a choisi l'amitié plutôt que la force. Le Canada est souverain, aux conditions de l'Accord anglo-canadien. Les cloches sonnent de Halifax jusqu'au Columbia."
+ canada_sovereignty.14.f: "Certaines nations se conquièrent. La nôtre fut reconnue."
+ canada_sovereignty.14.a: "Vive le Canada."
+
+ canada_sovereignty.15.t: "Un dominion loyal"
+ canada_sovereignty.15.d: "Il n'est presque plus question d'indépendance. Les Canadiens se satisfont d'être sujets de la Couronne, et le commerce impérial rapporte gros. Londres est ravie. Les réformistes se sont tus pour l'instant, et il faudra un sentiment national renouvelé pour ramener la question."
+ canada_sovereignty.15.f: "Dieu protège la Reine, et passez-nous les contrats de bois."
+ canada_sovereignty.15.a: "Nous sommes fiers d'être sujets de la Couronne."
+
+ canada_sovereignty.16.t: "Londres refuse la nation"
+ canada_sovereignty.16.d: "Londres a refusé de reconnaître ce que chaque Canadien sait déjà. Ce refus a uni le pays comme rien d'autre n'aurait pu le faire. Des volontaires s'entraînent dans chaque ville, et le Parlement est prêt à déclarer l'indépendance dès que nous en donnerons le signal."
+ canada_sovereignty.16.f: "Ils n'ont pas voulu nous laisser partir. Alors nous partirons."
+ canada_sovereignty.16.a: "Déclarer l'indépendance maintenant."
+ canada_sovereignty.16.b: "Pas encore. Nous choisirons le moment."
+
  je_canadian_sovereignty: "La voie de la souveraineté"
- je_canadian_sovereignty_reason: "Le Canada demeure un dominion de la Grande-Bretagne. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu.\n\n#b L'identité nationale#! progresse un peu chaque mois, et plus vite avec une [concept_literacy] d'au moins 30 %, le droit de vote, un [concept_gdp] ou un [concept_sol] parmi les 20 premiers, et le statut de puissance majeure. Tenir tête à Londres et laisser parler les réformistes la renforcent aussi.\n\nElle recule quand nous cédons aux exigences de Londres, dispersons les rassemblements réformistes ou perdons une guerre d'indépendance.\n\nÀ #v 50#!, Londres envisagera de laisser Terre-Neuve se joindre à la Confédération."
+ je_canadian_sovereignty_reason: "Le Canada demeure un dominion de la Grande-Bretagne. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu.\n\n#b L'identité nationale#! progresse un peu chaque mois, et plus vite avec une [concept_literacy] d'au moins 30 %, le droit de vote, un [concept_gdp] ou un [concept_sol] parmi les 20 premiers, et le statut de puissance majeure. Tenir tête à Londres et laisser parler les réformistes la renforcent aussi.\n\nElle recule quand nous cédons aux exigences de Londres, dispersons les rassemblements réformistes ou perdons une guerre d'indépendance.\n\nÀ #v 50#!, Londres envisagera de laisser Terre-Neuve se joindre à la Confédération. À #v 100#!, Londres devra répondre à la volonté de la nation, quelles que soient les relations. À #v 0#!, le Canada s'installe dans l'Empire et l'on cesse de parler d'indépendance jusqu'à ce qu'elle remonte à #v 25#!."
 
  canada_national_identity_bar: "Identité nationale"
  canada_national_identity_bar_desc: "Identité nationale : #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]#!/100"
@@ -109,6 +131,12 @@
  canada_rebellion_crushed: "Rébellion écrasée"
  canada_rebellion_crushed_desc: "Le soulèvement du Canada contre la Grande-Bretagne a échoué. Une nouvelle tentative devra attendre."
 
+
+ canada_will_of_nation: "La volonté d'une nation"
+ canada_will_of_nation_desc: "Londres a refusé de laisser partir le Canada, et les Canadiens sont prêts à se battre pour leur indépendance."
+ canada_loyal_dominion: "Dominion loyal"
+ canada_loyal_dominion_desc: "Les Canadiens se satisfont de l'Empire, et le commerce impérial les en récompense."
+ canada_loyal_dominion_tt: "Le Canada n'est pas un #v dominion loyal#! satisfait (porter l'#v identité nationale#! à 25)"
 
  rule_canada_start: "Départ canadien"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Conférence de la Confédération#!#!"

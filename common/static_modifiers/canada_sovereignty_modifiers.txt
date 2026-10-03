@@ -14,3 +14,14 @@ canada_rebellion_crushed = {
 	country_prestige_add = -10
 	country_influence_add = -15
 }
+
+canada_will_of_nation = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	unit_morale_loss_mult = -0.2
+}
+
+canada_loyal_dominion = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	building_group_bg_light_industry_throughput_add = 0.05
+	building_group_bg_logging_throughput_add = 0.05
+}

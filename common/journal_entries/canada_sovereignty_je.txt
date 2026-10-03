@@ -67,6 +67,36 @@
 
 	# While Canada waits, London and the reformers both push
 	on_monthly_pulse = {
+		effect = {
+			# 100: London must answer, once
+			if = {
+				limit = {
+					NOT = { has_variable = canada_will_of_nation_fired }
+					NOT = { has_variable = canada_hard_break_started }
+					is_at_war = no
+					je:je_canadian_sovereignty ?= { "scripted_bar_progress(canada_national_identity_bar)" >= 100 }
+				}
+				set_variable = canada_will_of_nation_fired
+				c:GBR = { trigger_event = { id = canada_sovereignty.13 } }
+			}
+			# 0: Canada settles into the Empire
+			if = {
+				limit = {
+					NOT = { has_variable = canada_loyal_dominion }
+					je:je_canadian_sovereignty ?= { "scripted_bar_progress(canada_national_identity_bar)" <= 0 }
+				}
+				trigger_event = { id = canada_sovereignty.15 }
+			}
+			# ...until identity recovers to 25
+			if = {
+				limit = {
+					has_variable = canada_loyal_dominion
+					je:je_canadian_sovereignty ?= { "scripted_bar_progress(canada_national_identity_bar)" >= 25 }
+				}
+				remove_variable = canada_loyal_dominion
+				remove_modifier = canada_loyal_dominion
+			}
+		}
 		random_events = {
 			190 = 0
 			5 = canada_sovereignty.4

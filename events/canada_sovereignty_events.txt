@@ -577,3 +577,142 @@ canada_sovereignty.12 = {
 		ai_chance = { base = 100 }
 	}
 }
+
+# National Identity at 100: London must answer, whatever relations are like
+canada_sovereignty.13 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.13.t
+	desc = canada_sovereignty.13.d
+	flavor = canada_sovereignty.13.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:CAN
+		c:CAN = { is_subject_of = c:GBR }
+	}
+
+	# Let Canada go, on the accord's terms
+	option = {
+		name = canada_sovereignty.13.a
+		default_option = yes
+		c:CAN = {
+			canada_gain_newfoundland = yes
+			canada_negotiated_independence = yes
+			trigger_event = { id = canada_sovereignty.14 }
+		}
+		ai_chance = { base = 70 }
+	}
+
+	# Refuse, and Canada will fight
+	option = {
+		name = canada_sovereignty.13.b
+		c:CAN = { trigger_event = { id = canada_sovereignty.16 } }
+		ai_chance = { base = 30 }
+	}
+}
+
+# Canada hears that London has let it go
+canada_sovereignty.14 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.14.t
+	desc = canada_sovereignty.14.d
+	flavor = canada_sovereignty.14.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	option = {
+		name = canada_sovereignty.14.a
+		default_option = yes
+		ai_chance = { base = 100 }
+	}
+}
+
+# National Identity at 0: Canada settles into the Empire
+canada_sovereignty.15 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.15.t
+	desc = canada_sovereignty.15.d
+	flavor = canada_sovereignty.15.f
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	immediate = {
+		set_variable = canada_loyal_dominion
+		add_modifier = { name = canada_loyal_dominion }
+		change_relations = { country = c:GBR value = 30 }
+	}
+
+	option = {
+		name = canada_sovereignty.15.a
+		default_option = yes
+		ai_chance = { base = 100 }
+	}
+}
+
+# London refuses the nation's will: Canada may rise at once
+canada_sovereignty.16 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.16.t
+	desc = canada_sovereignty.16.d
+	flavor = canada_sovereignty.16.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+		# Clear every cooldown that would stop a declaration
+		if = {
+			limit = { has_variable = canada_rebellion_crushed }
+			remove_variable = canada_rebellion_crushed
+		}
+		if = {
+			limit = { has_variable = canada_accord_refused }
+			remove_variable = canada_accord_refused
+		}
+		add_modifier = { name = canada_will_of_nation days = 1825 }
+	}
+
+	option = {
+		name = canada_sovereignty.16.a
+		default_option = yes
+		canada_hard_break = yes
+		ai_chance = { base = 70 }
+	}
+
+	option = {
+		name = canada_sovereignty.16.b
+		ai_chance = { base = 30 }
+	}
+}

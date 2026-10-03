@@ -10,41 +10,41 @@ canada_national_identity_bar = {
 	monthly_progress = {
 		add = {
 			desc = "canada_identity_generation_tt"
-			value = 0.25
+			value = 0.1
 		}
 		if = {
 			limit = { literacy_rate >= 0.3 }
 			add = {
 				desc = "canada_identity_literacy_tt"
-				value = 0.5
+				value = 0.15
 			}
 		}
 		if = {
 			limit = { country_has_voting_franchise = yes }
 			add = {
 				desc = "canada_identity_franchise_tt"
-				value = 0.5
+				value = 0.15
 			}
 		}
 		if = {
 			limit = { gdp_ranking <= 20 }
 			add = {
 				desc = "canada_identity_gdp_tt"
-				value = 0.5
+				value = 0.15
 			}
 		}
 		if = {
 			limit = { sol_ranking <= 20 }
 			add = {
 				desc = "canada_identity_sol_tt"
-				value = 0.5
+				value = 0.15
 			}
 		}
 		if = {
 			limit = { country_rank >= rank_value:major_power }
 			add = {
 				desc = "canada_identity_rank_tt"
-				value = 0.5
+				value = 0.15
 			}
 		}
 	}
