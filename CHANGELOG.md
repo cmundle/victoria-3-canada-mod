@@ -9,6 +9,7 @@
 - While Canada waits, London and the reformers push back through random events that move National Identity.
 - Hard break aftermath: a victory event with a choice of pride or reconciliation, and a defeat event that costs National Identity and locks out another rising for ten years.
 - Path to Sovereignty is pinned by default, and its description explains what raises and lowers National Identity.
+- Britain now answers Canada's request for negotiations. A refusal sours relations, raises National Identity by 10 and blocks another request for five years.
 - French localization.
 - Testing checklist in the README.
 

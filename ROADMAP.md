@@ -51,7 +51,7 @@ Make the core feature of the mod richer before adding breadth.
 - [x] Better accord terms unlocked as national identity grows: Newfoundland needs 50.
 - [x] Pressure from waiting: occasional events where London tightens its grip or reformers push harder.
 - [x] Hard break aftermath events for victory (recognition, cold relations with London) and defeat (reprisals, loss of autonomy, the journal entry stays open).
-- [ ] British reaction events from London's side, so an AI or player Britain feels the break too.
+- [x] British reaction events: London now decides whether to receive Canada's delegation, and a refusal raises National Identity and locks the accord button for five years.
 - [ ] American angle: the United States may offer support to a breakaway Canada, at a price.
 
 ## Phase 2: The early years, 1836 to 1860 (1.6)

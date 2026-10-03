@@ -44,6 +44,17 @@
  canada_sovereignty.7.f: "On peut vaincre une cause. Il est plus difficile de la faire oublier."
  canada_sovereignty.7.a: "Nous attendrons notre heure."
 
+ canada_sovereignty.8.t: "Une délégation du Canada"
+ canada_sovereignty.8.d: "Une délégation du Canada est arrivée au ministère des Colonies pour négocier la pleine souveraineté du Dominion. Elle parle d'un partenariat durable : une alliance, un commerce ouvert et une amitié qui se poursuit. Certains au Cabinet y voient un partenaire loyal en devenir. D'autres y voient la première fissure de l'Empire."
+ canada_sovereignty.8.f: "Mieux vaut un ami qui a choisi de rester proche qu'une colonie qu'il faut retenir."
+ canada_sovereignty.8.a: "Recevoir la délégation et entendre ses conditions."
+ canada_sovereignty.8.b: "La place du Canada est au sein de l'Empire. Qu'on les renvoie."
+
+ canada_sovereignty.9.t: "Londres refuse"
+ canada_sovereignty.9.d: "Notre délégation est revenue de Londres les mains vides. Le ministère des Colonies n'a même pas voulu discuter des conditions. La nouvelle s'est vite répandue, et des Canadiens qui se contentaient d'attendre demandent maintenant pourquoi leur avenir se déciderait de l'autre côté de l'océan."
+ canada_sovereignty.9.f: "Une porte fermée au nez reste une porte dont on connaît l'existence."
+ canada_sovereignty.9.a: "Alors nous trouverons un autre chemin."
+
  je_canadian_sovereignty: "La voie de la souveraineté"
  je_canadian_sovereignty_reason: "Le Canada demeure un dominion du Royaume-Uni. Le moment et la manière de voler de nos propres ailes sont un choix qui nous appartiendra le temps venu.\n\n#b L'identité nationale#! progresse un peu chaque mois, et plus vite avec une [concept_literacy] d'au moins 30 %, le droit de vote, un [concept_gdp] ou un [concept_sol] parmi les 20 premiers, et le statut de puissance majeure. Tenir tête à Londres et laisser parler les réformistes la renforcent aussi.\n\nElle recule quand nous cédons aux exigences de Londres, dispersons les rassemblements réformistes ou perdons une guerre d'indépendance.\n\nÀ #v 50#!, Londres envisagera de laisser Terre-Neuve se joindre à la Confédération."
 

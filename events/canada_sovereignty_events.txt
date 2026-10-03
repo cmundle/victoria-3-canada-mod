@@ -33,7 +33,7 @@ canada_sovereignty.1 = {
 	option = {
 		name = canada_sovereignty.1.b
 		default_option = yes
-		trigger_event = { id = canada_sovereignty.2 }
+		canada_request_accord = yes
 		ai_chance = { base = 50 }
 	}
 
@@ -339,6 +339,84 @@ canada_sovereignty.7 = {
 	option = {
 		name = canada_sovereignty.7.a
 		default_option = yes
+		ai_chance = { base = 100 }
+	}
+}
+
+# London's answer to Canada's request for negotiations
+canada_sovereignty.8 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.8.t
+	desc = canada_sovereignty.8.d
+	flavor = canada_sovereignty.8.f
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:CAN
+	}
+
+	# Receive the delegation; Canada then chooses its terms
+	option = {
+		name = canada_sovereignty.8.a
+		default_option = yes
+		c:CAN = {
+			remove_variable = canada_accord_pending
+			trigger_event = { id = canada_sovereignty.2 }
+		}
+		ai_chance = {
+			base = 75
+			modifier = {
+				trigger = { c:CAN ?= { relations:root < relations_threshold:cordial } }
+				add = -50
+			}
+		}
+	}
+
+	# Send them home; Canadians will not forget it
+	option = {
+		name = canada_sovereignty.8.b
+		c:CAN = {
+			remove_variable = canada_accord_pending
+			set_variable = { name = canada_accord_refused days = 1825 }
+			trigger_event = { id = canada_sovereignty.9 }
+		}
+		ai_chance = { base = 25 }
+	}
+}
+
+# Canada hears that London has refused
+canada_sovereignty.9 = {
+	type = country_event
+	placement = root
+
+	title = canada_sovereignty.9.t
+	desc = canada_sovereignty.9.d
+	flavor = canada_sovereignty.9.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	duration = 3
+
+	option = {
+		name = canada_sovereignty.9.a
+		default_option = yes
+		je:je_canadian_sovereignty ?= {
+			add_progress = { value = 10 name = canada_national_identity_bar }
+		}
+		change_relations = { country = c:GBR value = -20 }
 		ai_chance = { base = 100 }
 	}
 }

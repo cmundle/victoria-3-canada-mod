@@ -8,10 +8,12 @@
 	possible = {
 		is_at_war = no
 		c:GBR = { is_at_war = no }
+		NOT = { has_variable = canada_accord_pending }
+		NOT = { has_variable = canada_accord_refused }
 	}
 
 	effect = {
-		trigger_event = { id = canada_sovereignty.2 }
+		canada_request_accord = yes
 	}
 
 	ai_chance = {

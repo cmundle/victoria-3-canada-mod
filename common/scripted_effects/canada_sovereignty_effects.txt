@@ -107,3 +107,10 @@ canada_hard_break = {
 		type = dp_independence
 	}
 }
+
+# Scope: Canada. Asks London for the accord; Britain answers in
+# canada_sovereignty.8, and only then does Canada see the terms.
+canada_request_accord = {
+	set_variable = { name = canada_accord_pending days = 90 }
+	c:GBR = { trigger_event = { id = canada_sovereignty.8 } }
+}

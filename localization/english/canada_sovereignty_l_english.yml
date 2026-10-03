@@ -44,6 +44,17 @@
  canada_sovereignty.7.f: "A cause can be defeated. It is harder to make it forgotten."
  canada_sovereignty.7.a: "We will bide our time."
 
+ canada_sovereignty.8.t: "A Delegation from Canada"
+ canada_sovereignty.8.d: "A delegation from Canada has arrived at the Colonial Office asking to negotiate full sovereignty for the Dominion. They speak of a lasting partnership: an alliance, open trade and continued friendship. Some in Cabinet see a loyal partner in the making. Others see the first crack in the Empire."
+ canada_sovereignty.8.f: "Better a friend who chose to stay close than a colony that had to be held."
+ canada_sovereignty.8.a: "Receive the delegation and hear their terms."
+ canada_sovereignty.8.b: "Canada's place is within the Empire. Send them home."
+
+ canada_sovereignty.9.t: "London Refuses"
+ canada_sovereignty.9.d: "Our delegation has returned from London empty-handed. The Colonial Office would not even discuss terms. Word has spread quickly, and Canadians who were content to wait are now asking why their future should be decided across an ocean."
+ canada_sovereignty.9.f: "A door closed in our faces is still a door we know is there."
+ canada_sovereignty.9.a: "Then we will find another way."
+
  je_canadian_sovereignty: "Path to Sovereignty"
  je_canadian_sovereignty_reason: "Canada remains a dominion of the United Kingdom. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation."
 
