@@ -106,18 +106,40 @@ canada_hard_break = {
 		target_country = c:GBR
 		type = dp_independence
 	}
-	# Washington weighs in, unless it is tied to London
-	if = {
-		limit = {
-			exists = c:USA
-			c:USA = {
-				is_subject = no
-				NOT = { is_in_same_power_bloc = c:GBR }
+}
+
+# Scope: Canada. Asks Washington for backing ahead of a break. Support
+# Independence only brings a country into the play if the treaty exists
+# when the play starts, so this has to happen before declaring.
+canada_approach_washington = {
+	debug_log = "CANADA MOD: asking Washington for support"
+	set_variable = { name = canada_washington_pending days = 90 }
+	c:USA = { trigger_event = { id = canada_sovereignty.10 } }
+}
+
+# Scope: Canada. Washington's side of either deal.
+canada_american_support_treaty = {
+	set_variable = canada_us_backed
+	create_treaty = {
+		first_country = c:USA
+		second_country = root
+		is_draft = no
+		binding_period = { years = 5 }
+		articles_to_create = {
+			{
+				article = support_independence
+				source_country = c:USA
+				target_country = root
+			}
+			{
+				article = military_assistance
+				source_country = c:USA
+				target_country = root
 			}
 		}
-		debug_log = "CANADA MOD: asking Washington for support"
-		c:USA = { trigger_event = { id = canada_sovereignty.10 days = 1 } }
 	}
+	change_relations = { country = c:USA value = 20 }
+	change_relations = { country = c:GBR value = -10 }
 }
 
 # Scope: Canada. Asks London for the accord; Britain answers in

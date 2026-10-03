@@ -55,17 +55,17 @@
  canada_sovereignty.9.f: "Une porte fermée au nez reste une porte dont on connaît l'existence."
  canada_sovereignty.9.a: "Alors nous trouverons un autre chemin."
 
- canada_sovereignty.10.t: "Le Canada se soulève contre la Grande-Bretagne"
- canada_sovereignty.10.d: "Le Canada a déclaré son indépendance de l'Empire britannique. Ses dirigeants ont discrètement demandé si les États-Unis se tiendraient à leurs côtés : un soutien à leur indépendance et une aide militaire. Une république amie au nord ne serait pas une mince affaire, et le Canada est prêt à nous ouvrir ses marchés une fois libre. La Grande-Bretagne ne nous remerciera pas de cette ingérence."
+ canada_sovereignty.10.t: "Le Canada cherche l'appui américain"
+ canada_sovereignty.10.d: "Des envoyés du Canada sont venus discrètement à Washington. Si le Canada rompait un jour avec l'Empire britannique, demandent-ils, les États-Unis se tiendraient-ils à ses côtés ? Un voisin ami au nord ne serait pas une mince affaire, et les Canadiens sont prêts à payer notre appui. La Grande-Bretagne ne nous remerciera pas de cette ingérence."
  canada_sovereignty.10.f: "Toute république fut un jour une colonie qui en avait assez."
  canada_sovereignty.10.a: "Offrir notre soutien au Canada."
  canada_sovereignty.10.b: "C'est une querelle au sein de la famille britannique."
 
  canada_sovereignty.11.t: "Une offre de Washington"
- canada_sovereignty.11.d: "Les États-Unis offrent d'appuyer ouvertement notre cause : ils soutiendront notre indépendance dans la guerre à venir et enverront une aide militaire. Le prix est clair : une fois libres, dix ans d'accès privilégié aux marchés canadiens pour les marchands américains. Certains parlementaires accueillent volontiers tout allié contre la Grande-Bretagne. D'autres craignent qu'échapper à l'emprise d'un empire pour tomber sous celle d'un voisin ne soit pas une victoire."
+ canada_sovereignty.11.d: "Les États-Unis nous appuieront. Si nous prenons les armes contre la Grande-Bretagne, Washington soutiendra notre indépendance et enverra une aide militaire. Reste à savoir comment payer. Les marchands américains veulent un accès privilégié à nos marchés une fois que nous serons libres. Certains à Washington préféreraient le pays de l'Oregon, que la Grande-Bretagne et les États-Unis se disputent depuis des décennies, et offriraient en échange une alliance durable."
  canada_sovereignty.11.f: "Méfiez-vous des voisins qui apportent des cadeaux."
- canada_sovereignty.11.a: "Accepter le soutien américain."
- canada_sovereignty.11.b: "Le Canada gagnera seul."
+ canada_sovereignty.11.a: "Leur promettre nos marchés une fois libres."
+ canada_sovereignty.11.b: "Le Canada se tiendra debout seul."
 
  canada_sovereignty.12.t: "Washington reste à l'écart"
  canada_sovereignty.12.d: "On a fait savoir à nos envoyés à Washington, poliment mais fermement, que les États-Unis ne prendront pas parti dans une querelle entre le Canada et la Grande-Bretagne. Ce que nous gagnerons, nous le gagnerons seuls."
@@ -95,6 +95,12 @@
  canada_accord_refused_tt: "Londres n'a pas refusé de délégation au cours des cinq dernières années"
  canada_rebellion_crushed_tt: "Aucun soulèvement n'a été écrasé au cours des dix dernières années"
 
+ canada_sovereignty.11.c: "Céder le pays de l'Oregon contre une alliance durable."
+ canada_approach_washington_button: "Approcher Washington"
+ canada_approach_washington_button_desc: "Demander aux États-Unis d'appuyer une future rupture avec la Grande-Bretagne. Si Washington accepte, il signe avec le Canada des traités de soutien à l'indépendance et d'aide militaire, et se joindra à nous si nous déclarons l'indépendance. À faire avant la déclaration : un appui promis une fois la guerre commencée arrive trop tard."
+ canada_us_backed_tt: "Le Canada n'a pas déjà l'appui américain"
+ canada_washington_pending_tt: "Aucun envoyé n'attend déjà la réponse de Washington"
+ canada_washington_cooldown_tt: "Washington n'a pas été approché au cours des cinq dernières années"
  canada_anglo_canadian_accord: "Accord anglo-canadien"
  canada_anglo_canadian_accord_desc: "Le Canada et la Grande-Bretagne se sont séparés en égaux et demeurent de proches partenaires."
 
@@ -103,8 +109,6 @@
  canada_rebellion_crushed: "Rébellion écrasée"
  canada_rebellion_crushed_desc: "Le soulèvement du Canada contre la Grande-Bretagne a échoué. Une nouvelle tentative devra attendre."
 
- canada_american_backing: "Soutien américain"
- canada_american_backing_desc: "Les armes et l'argent des États-Unis soutiennent la lutte du Canada pour son indépendance."
 
  rule_canada_start: "Départ canadien"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Conférence de la Confédération#!#!"

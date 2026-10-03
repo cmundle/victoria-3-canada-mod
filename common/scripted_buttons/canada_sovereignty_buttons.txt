@@ -60,3 +60,45 @@ canada_break_hard_button = {
 		value = 2
 	}
 }
+
+canada_approach_washington_button = {
+	name = "canada_approach_washington_button"
+	desc = "canada_approach_washington_button_desc"
+
+	visible = {
+		is_subject_of = c:GBR
+		exists = c:USA
+		c:USA = {
+			is_subject = no
+			NOT = { is_in_same_power_bloc = c:GBR }
+		}
+	}
+	possible = {
+		is_at_war = no
+		custom_tooltip = {
+			text = canada_no_independence_war_tt
+			NOT = { has_variable = canada_hard_break_started }
+			is_diplomatic_play_initiator = no
+		}
+		custom_tooltip = {
+			text = canada_us_backed_tt
+			NOT = { has_variable = canada_us_backed }
+		}
+		custom_tooltip = {
+			text = canada_washington_pending_tt
+			NOT = { has_variable = canada_washington_pending }
+		}
+		custom_tooltip = {
+			text = canada_washington_cooldown_tt
+			NOT = { has_variable = canada_washington_cooldown }
+		}
+	}
+
+	effect = {
+		canada_approach_washington = yes
+	}
+
+	ai_chance = {
+		value = 2
+	}
+}

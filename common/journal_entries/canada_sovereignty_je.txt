@@ -5,6 +5,7 @@
 	scripted_progress_bar = canada_national_identity_bar
 
 	scripted_button = canada_negotiate_accord_button
+	scripted_button = canada_approach_washington_button
 	scripted_button = canada_break_hard_button
 
 	# Completes however independence happens (accord or winning the war)
@@ -37,6 +38,23 @@
 						source_country = root
 						target_country = c:USA
 					}
+				}
+			}
+		}
+		# The Oregon bargain: the promised alliance, once Canada can sign one
+		if = {
+			limit = {
+				has_variable = canada_us_alliance_promised
+				exists = c:USA
+			}
+			remove_variable = canada_us_alliance_promised
+			create_treaty = {
+				first_country = root
+				second_country = c:USA
+				is_draft = no
+				binding_period = { years = 99 }
+				articles_to_create = {
+					{ article = alliance }
 				}
 			}
 		}

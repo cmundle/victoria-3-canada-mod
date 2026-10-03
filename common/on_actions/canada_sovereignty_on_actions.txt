@@ -84,6 +84,14 @@ canada_hard_break_failed = {
 			limit = { has_variable = canada_owes_washington }
 			remove_variable = canada_owes_washington
 		}
+		if = {
+			limit = { has_variable = canada_us_alliance_promised }
+			remove_variable = canada_us_alliance_promised
+		}
+		if = {
+			limit = { has_variable = canada_us_backed }
+			remove_variable = canada_us_backed
+		}
 		trigger_event = { id = canada_sovereignty.7 }
 	}
 }

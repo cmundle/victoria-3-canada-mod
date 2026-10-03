@@ -55,17 +55,17 @@
  canada_sovereignty.9.f: "A door closed in our faces is still a door we know is there."
  canada_sovereignty.9.a: "Then we will find another way."
 
- canada_sovereignty.10.t: "Canada Rises Against Britain"
- canada_sovereignty.10.d: "Canada has declared its independence from the British Empire. Its leaders have quietly asked whether the United States would stand with them: support for their independence and military assistance. A friendly republic to the north would be no small prize, and Canada is willing to open its markets to us once it is free. Britain will not thank us for meddling."
+ canada_sovereignty.10.t: "Canada Seeks American Support"
+ canada_sovereignty.10.d: "Envoys from Canada have come quietly to Washington. Should Canada ever break with the British Empire, they ask, would the United States stand with them? A friendly neighbour to the north would be no small prize, and the Canadians are ready to pay for our support. Britain will not thank us for meddling."
  canada_sovereignty.10.f: "Every republic was once a colony that decided it had had enough."
  canada_sovereignty.10.a: "Offer Canada our support."
  canada_sovereignty.10.b: "This is a quarrel within the British family."
 
  canada_sovereignty.11.t: "An Offer from Washington"
- canada_sovereignty.11.d: "The United States has offered to back our cause openly: it will support our independence in the coming war and send military assistance. The price is plain: once we are free, ten years of privileged access to Canadian markets for American merchants. Some in Parliament welcome any friend against Britain. Others fear that escaping one empire's grip only to fall into a neighbour's would be no victory at all."
+ canada_sovereignty.11.d: "The United States will back us. If we take up arms against Britain, Washington will support our independence and send military assistance. The question is how we pay. American merchants want privileged access to our markets once we are free. Some in Washington would rather have the Oregon Country, which Britain and the United States have quarrelled over for decades, and would offer a lasting alliance for it."
  canada_sovereignty.11.f: "Beware of neighbours bearing gifts."
- canada_sovereignty.11.a: "Accept American support."
- canada_sovereignty.11.b: "Canada will win this on its own."
+ canada_sovereignty.11.a: "Promise them our markets once we are free."
+ canada_sovereignty.11.b: "Canada will stand on its own."
 
  canada_sovereignty.12.t: "Washington Stays Out"
  canada_sovereignty.12.d: "Our envoys in Washington have been told politely but firmly that the United States will not take sides in a quarrel between Canada and Great Britain. Whatever we win, we will win alone."
@@ -95,6 +95,12 @@
  canada_accord_refused_tt: "London has not refused a delegation in the last five years"
  canada_rebellion_crushed_tt: "No rising has been crushed in the last ten years"
 
+ canada_sovereignty.11.c: "Cede the Oregon Country for a lasting alliance."
+ canada_approach_washington_button: "Approach Washington"
+ canada_approach_washington_button_desc: "Ask the United States to back a future break with Britain. If Washington agrees, it signs Support Independence and Military Assistance treaties with Canada, and will join our side if we declare independence. Do this before declaring: support promised after the war starts comes too late."
+ canada_us_backed_tt: "Canada does not already have American backing"
+ canada_washington_pending_tt: "No envoy is already waiting for Washington's answer"
+ canada_washington_cooldown_tt: "Washington has not been approached in the last five years"
  canada_anglo_canadian_accord: "Anglo-Canadian Accord"
  canada_anglo_canadian_accord_desc: "Canada and Great Britain parted as equals and remain close partners."
 
@@ -103,8 +109,6 @@
  canada_rebellion_crushed: "Rebellion Crushed"
  canada_rebellion_crushed_desc: "Canada's rising against Britain failed. Another attempt must wait."
 
- canada_american_backing: "American Backing"
- canada_american_backing_desc: "Arms and money from the United States support Canada's fight for independence."
 
  rule_canada_start: "Canadian Start"
  setting_canada_start_confederation: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_canada_start_confederation_desc Confederation Conference#!#!"

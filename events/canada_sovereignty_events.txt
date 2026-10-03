@@ -427,7 +427,7 @@ canada_sovereignty.9 = {
 	}
 }
 
-# Washington considers backing a Canadian rising
+# Washington considers backing a future Canadian break
 canada_sovereignty.10 = {
 	type = country_event
 	placement = root
@@ -446,7 +446,14 @@ canada_sovereignty.10 = {
 
 	trigger = {
 		exists = c:CAN
-		c:CAN = { is_subject_of = c:GBR }
+		c:CAN = {
+			is_subject_of = c:GBR
+			NOT = { has_variable = canada_hard_break_started }
+		}
+	}
+
+	immediate = {
+		c:CAN = { remove_variable = canada_washington_pending }
 	}
 
 	option = {
@@ -461,7 +468,10 @@ canada_sovereignty.10 = {
 	option = {
 		name = canada_sovereignty.10.b
 		debug_log = "CANADA MOD: Washington stays out"
-		c:CAN = { trigger_event = { id = canada_sovereignty.12 } }
+		c:CAN = {
+			set_variable = { name = canada_washington_cooldown days = 1825 }
+			trigger_event = { id = canada_sovereignty.12 }
+		}
 		ai_chance = { base = 30 }
 	}
 }
@@ -487,42 +497,48 @@ canada_sovereignty.11 = {
 		exists = c:USA
 	}
 
-	# American support in the war now; American access to our markets once
-	# we are free (Canada is inside Britain's market until then, so the
-	# privileges couldn't be honoured anyway)
+	# Pay later: American access to our markets once we are free (Canada is
+	# inside Britain's market until then, so it couldn't be honoured anyway)
 	option = {
 		name = canada_sovereignty.11.a
 		default_option = yes
-		add_modifier = { name = canada_american_backing days = 1825 }
 		set_variable = canada_owes_washington
-		# Support Independence brings the United States into the
-		# independence play on Canada's side
-		create_treaty = {
-			first_country = c:USA
-			second_country = root
-			is_draft = no
-			binding_period = { years = 5 }
-			articles_to_create = {
-				{
-					article = support_independence
-					source_country = c:USA
-					target_country = root
-				}
-				{
-					article = military_assistance
-					source_country = c:USA
-					target_country = root
+		canada_american_support_treaty = yes
+		ai_chance = { base = 50 }
+	}
+
+	# Pay now: hand over the Oregon Country, as Britain did in 1846, for
+	# American support now and an alliance once Canada is free
+	option = {
+		name = canada_sovereignty.11.c
+		trigger = {
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_WASHINGTON
+					state_region = s:STATE_OREGON
+					state_region = s:STATE_IDAHO
 				}
 			}
 		}
-		change_relations = { country = c:USA value = 20 }
-		change_relations = { country = c:GBR value = -10 }
-		ai_chance = { base = 70 }
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_WASHINGTON
+					state_region = s:STATE_OREGON
+					state_region = s:STATE_IDAHO
+				}
+			}
+			set_state_owner = c:USA
+		}
+		set_variable = canada_us_alliance_promised
+		canada_american_support_treaty = yes
+		ai_chance = { base = 20 }
 	}
 
 	# Canada stands on its own
 	option = {
 		name = canada_sovereignty.11.b
+		set_variable = { name = canada_washington_cooldown days = 1825 }
 		je:je_canadian_sovereignty ?= {
 			add_progress = { value = 5 name = canada_national_identity_bar }
 		}
