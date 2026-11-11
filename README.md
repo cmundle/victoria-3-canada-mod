@@ -2,7 +2,7 @@
 
 A Victoria 3 mod that unites Canada from day one in 1836 and lets you choose your path to sovereignty: wait, negotiate an accord with Britain, or break away by force. Includes Rupert's Land, the Columbia District and a Newfoundland deal, with more Canadian events and historical figures on the way.
 
-Built for Victoria 3 **1.13.x**.
+Built for Victoria 3 **1.15.x** (State and Revolution). Older saves will not load, and the mod needs a new game.
 
 ## What it does
 
@@ -65,6 +65,8 @@ Edits then show up in the game on the next launch. The catch is that the game an
 
 - Every `.txt` and `.yml` file must be **UTF-8 with BOM**.
 - Alliances and trade deals are **treaties** (`create_treaty`), not diplomatic pacts, since patch 1.9.
+- Since patch 1.15, journal entries use `outcome` blocks instead of `complete`, `on_complete` and `invalid`. `common/journal_entries/00_canada_australia.txt` replaces a vanilla file, so after every game patch diff it against the vanilla copy in `game/common/journal_entries/` and re-copy it if it changed.
+- Scripted progress bars no longer have the ready-made `default_green` look. Ours sets its textures explicitly.
 - Setup steps write `CANADA MOD:` lines to `debug.log`. Check `error.log` after any change.
 
 ## Testing a change

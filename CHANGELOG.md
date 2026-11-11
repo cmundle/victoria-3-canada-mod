@@ -1,6 +1,9 @@
 # Changelog
 
 ## 1.4 (in progress)
+- Updated for Victoria 3 1.15 (State and Revolution). Journal entries now use `outcome` blocks in place of `complete`, `on_complete` and `invalid`, in Path to Sovereignty and in the override of vanilla's `00_canada_australia.txt`.
+- The National Identity bar sets its own textures, since 1.15 removed the `default_green` look.
+- Added the localization the new outcome blocks need, in English and French.
 - The Confederation Conference: on day one, Upper Canada picks Ottawa, Quebec City or Halifax to host, and that city becomes the capital. Declining keeps the base game start.
 - Confederation incorporates the provinces (Ontario, Quebec, and New Brunswick with Nova Scotia), and Newfoundland on joining. Rupert's Land and the Columbia District stay unincorporated territories.
 - The base game's Unite Canada journal entry is hidden once Confederation happens.

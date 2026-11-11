@@ -8,60 +8,65 @@
 	scripted_button = canada_approach_washington_button
 	scripted_button = canada_break_hard_button
 
-	# Completes however independence happens (accord or winning the war)
-	complete = {
-		is_subject = no
-	}
-
+	# Concludes however independence happens (accord or winning the war).
 	# An independent Canada turns west: Frontier Colonization, unless a
-	# colonization law is already in place
-	on_complete = {
-		if = {
-			limit = { has_variable = canada_hard_break_started }
-			trigger_event = { id = canada_sovereignty.6 }
+	# colonization law is already in place.
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_canadian_sovereignty_completed_desc
+		trigger = {
+			is_subject = no
 		}
-		# Washington's price, due now that Canada has its own market
-		if = {
-			limit = {
-				has_variable = canada_owes_washington
-				exists = c:USA
+		effect = {
+			if = {
+				limit = { has_variable = canada_hard_break_started }
+				trigger_event = { id = canada_sovereignty.6 }
 			}
-			remove_variable = canada_owes_washington
-			create_treaty = {
-				first_country = root
-				second_country = c:USA
-				is_draft = no
-				binding_period = { years = 10 }
-				articles_to_create = {
-					{
-						article = trade_privilege
-						source_country = root
-						target_country = c:USA
+			# Washington's price, due now that Canada has its own market
+			if = {
+				limit = {
+					has_variable = canada_owes_washington
+					exists = c:USA
+				}
+				remove_variable = canada_owes_washington
+				create_treaty = {
+					first_country = root
+					second_country = c:USA
+					is_draft = no
+					binding_period = { years = 10 }
+					articles_to_create = {
+						{
+							article = trade_privilege
+							source_country = root
+							target_country = c:USA
+						}
 					}
 				}
 			}
-		}
-		# The Oregon bargain: the promised alliance, once Canada can sign one
-		if = {
-			limit = {
-				has_variable = canada_us_alliance_promised
-				exists = c:USA
-			}
-			remove_variable = canada_us_alliance_promised
-			create_treaty = {
-				first_country = root
-				second_country = c:USA
-				is_draft = no
-				binding_period = { years = 99 }
-				articles_to_create = {
-					{ article = alliance }
+			# The Oregon bargain: the promised alliance, once Canada can sign one
+			if = {
+				limit = {
+					has_variable = canada_us_alliance_promised
+					exists = c:USA
+				}
+				remove_variable = canada_us_alliance_promised
+				create_treaty = {
+					first_country = root
+					second_country = c:USA
+					is_draft = no
+					binding_period = { years = 99 }
+					articles_to_create = {
+						{ article = alliance }
+					}
 				}
 			}
-		}
-		add_technology_researched = colonization
-		if = {
-			limit = { has_law = law_type:law_no_colonial_affairs }
-			activate_law = law_type:law_frontier_colonization
+			add_technology_researched = colonization
+			if = {
+				limit = { has_law = law_type:law_no_colonial_affairs }
+				activate_law = law_type:law_frontier_colonization
+			}
 		}
 	}
 
@@ -104,8 +109,14 @@
 		}
 	}
 
-	invalid = {
-		NOT = { exists = c:GBR }
+	# Silently ends the entry if Britain disappears
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = je_canadian_sovereignty_invalid_desc
+		trigger = {
+			NOT = { exists = c:GBR }
+		}
+		effect = {}
 	}
 
 	weight = 100
