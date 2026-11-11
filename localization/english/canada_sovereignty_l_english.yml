@@ -96,6 +96,14 @@
 
  je_canadian_sovereignty: "Path to Sovereignty"
  je_canadian_sovereignty_reason: "Canada remains a dominion of Great Britain. How and when we stand on our own is a choice we can make when the time is right.\n\n#b National Identity#! rises a little every month, and faster with [concept_literacy] of 30% or more, voting rights, a top 20 [concept_gdp] or [concept_sol], and Major Power status. Standing up to London and letting reformers be heard raise it too.\n\nIt falls when we bow to London's demands, break up reform rallies, or lose a war of independence.\n\nAt #v 50#!, London will consider letting Newfoundland join Confederation. At #v 100#!, London must answer the will of the nation, whatever relations are like. At #v 0#!, Canada settles into the Empire and talk of independence stops until it recovers to #v 25#!."
+ je_canadian_sovereignty_completed_desc: "Canada stands on its own. The long road from colony to nation has reached its end, however it was walked."
+ je_canadian_sovereignty_invalid_desc: "Britain no longer exists, so there is nothing left to break away from."
+ canada_mod_je_canada_can_completed_desc: "The colonies of British North America have been brought together under one flag."
+ canada_mod_je_canada_can_invalid_desc: "Canada is no longer a dominion, or its colonies were already united at Confederation."
+ canada_mod_je_canada_gbr_completed_desc: "The British colonies in North America have been united as one dominion."
+ canada_mod_je_australia_aus_completed_desc: "The colonies of Australasia have been brought together under one flag."
+ canada_mod_je_australia_aus_invalid_desc: "Australia is no longer a dominion."
+ canada_mod_je_australia_gbr_completed_desc: "The British colonies in Australasia have been united as one dominion."
 
  canada_national_identity_bar: "National Identity"
  canada_national_identity_bar_desc: "National Identity: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]#!/100"

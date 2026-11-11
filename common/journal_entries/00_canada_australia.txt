@@ -1,9 +1,13 @@
-﻿# Replaces the vanilla file of the same name (game 1.13.11). Vanilla keeps
-# the first definition of a key, so je_canada_can can only be changed by
-# replacing the whole file. The only change is to je_canada_can: it hides
-# and goes invalid once the Confederation Conference unites Canada
-# (variable canada_confederated). Everything else is vanilla, unchanged.
-# Re-copy this file from vanilla if a patch changes the original.
+﻿# Replaces the vanilla file of the same name. Vanilla keeps the first
+# definition of a key, so je_canada_can can only be changed by replacing the
+# whole file. The only intended change is to je_canada_can: it hides and goes
+# invalid once the Confederation Conference unites Canada (variable
+# canada_confederated). Everything else should match vanilla.
+#
+# Patch 1.15 merged complete, on_complete and invalid into outcome blocks, and
+# this file was converted by hand from the 1.13.11 original. Re-copy it from
+# the current vanilla file if a patch changes the original again (see the
+# modding notes in the README).
 
 je_canada_can = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
@@ -33,47 +37,57 @@ je_canada_can = {
 
 	scripted_button = je_canada_unite_can_button
 
-	complete = {
-		any_state_in_greater_canada = {
-			filter = {
-				NOR = {
-					this.state_region = s:STATE_WASHINGTON
-					this.state_region = s:STATE_IDAHO
-					this.state_region = s:STATE_OREGON
-					this.state_region = s:STATE_NEWFOUNDLAND
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = canada_mod_je_canada_can_completed_desc
+		trigger = {
+			any_state_in_greater_canada = {
+				filter = {
+					NOR = {
+						this.state_region = s:STATE_WASHINGTON
+						this.state_region = s:STATE_IDAHO
+						this.state_region = s:STATE_OREGON
+						this.state_region = s:STATE_NEWFOUNDLAND
+					}
 				}
+				owner = ROOT
+				percent = 1
 			}
-			owner = ROOT
-			percent = 1
 		}
-	}
-
-	on_complete = {
-		trigger_event = { id = can_aus.5 }
-		hidden_effect = {
-			if = {
-				limit = {
-					any_scope_state = {
-						state_region = s:STATE_ONTARIO
+		effect = {
+			trigger_event = { id = can_aus.5 }
+			hidden_effect = {
+				if = {
+					limit = {
+						any_scope_state = {
+							state_region = s:STATE_ONTARIO
+						}
+					}
+				}
+				s:STATE_ONTARIO = {
+					random_scope_state = {
+				        set_hub_name = {
+				            type = city
+				            name = HUB_NAME_STATE_ONTARIO_city_ottawa
+				        }
 					}
 				}
 			}
-			s:STATE_ONTARIO = {
-				random_scope_state = {
-			        set_hub_name = {
-			            type = city
-			            name = HUB_NAME_STATE_ONTARIO_city_ottawa
-			        }
-				}
-			}
 		}
 	}
 
-	invalid = {
-		OR = {
-			is_subject = no
-			has_variable = canada_confederated
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = canada_mod_je_canada_can_invalid_desc
+		trigger = {
+			OR = {
+				is_subject = no
+				has_variable = canada_confederated
+			}
 		}
+		effect = {}
 	}
 
 	weight = 100
@@ -121,45 +135,51 @@ je_canada_gbr = {
 
 	scripted_button = je_canada_unite_can_button
 
-	complete = {
-		any_country_in_greater_canada = {
-			is_subject_of = ROOT
-			owns_entire_state_region = STATE_ONTARIO
-			owns_entire_state_region = STATE_NEW_BRUNSWICK
-			owns_entire_state_region = STATE_QUEBEC
-			owns_entire_state_region = STATE_NEWFOUNDLAND
-			owns_entire_state_region = STATE_ALBERTA
-			owns_entire_state_region = STATE_BRITISH_COLUMBIA
-			owns_entire_state_region = STATE_SASKATCHEWAN
-			owns_entire_state_region = STATE_MANITOBA
-			owns_entire_state_region = STATE_YUKON_TERRITORY
-			owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
-			owns_entire_state_region = STATE_NUNAVUT
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = canada_mod_je_canada_gbr_completed_desc
+		trigger = {
+			any_country_in_greater_canada = {
+				is_subject_of = ROOT
+				owns_entire_state_region = STATE_ONTARIO
+				owns_entire_state_region = STATE_NEW_BRUNSWICK
+				owns_entire_state_region = STATE_QUEBEC
+				owns_entire_state_region = STATE_NEWFOUNDLAND
+				owns_entire_state_region = STATE_ALBERTA
+				owns_entire_state_region = STATE_BRITISH_COLUMBIA
+				owns_entire_state_region = STATE_SASKATCHEWAN
+				owns_entire_state_region = STATE_MANITOBA
+				owns_entire_state_region = STATE_YUKON_TERRITORY
+				owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+				owns_entire_state_region = STATE_NUNAVUT
+			}
 		}
-	}
-
-	on_complete = {
-		trigger_event = { id = can_aus.6 }
-		hidden_effect = {
-			if = {
-				limit = {
-					any_subject_or_below = {
-						any_scope_state = {
-							state_region = s:STATE_ONTARIO
+		effect = {
+			trigger_event = { id = can_aus.6 }
+			hidden_effect = {
+				if = {
+					limit = {
+						any_subject_or_below = {
+							any_scope_state = {
+								state_region = s:STATE_ONTARIO
+							}
 						}
 					}
 				}
-			}
-			s:STATE_ONTARIO = {
-				random_scope_state = {
-			        set_hub_name = {
-			            type = city
-			            name = HUB_NAME_STATE_ONTARIO_city_ottawa
-			        }
+				s:STATE_ONTARIO = {
+					random_scope_state = {
+				        set_hub_name = {
+				            type = city
+				            name = HUB_NAME_STATE_ONTARIO_city_ottawa
+				        }
+					}
 				}
 			}
 		}
 	}
+
 
 	weight = 100
 
@@ -185,20 +205,32 @@ je_australia_aus = {
 
 	scripted_button = je_australia_unite_aus_button
 
-	complete = {
-		any_state_in_australasia = {
-			owner = ROOT
-			percent = 1
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = canada_mod_je_australia_aus_completed_desc
+		trigger = {
+			any_state_in_australasia = {
+				owner = ROOT
+				percent = 1
+			}
+		}
+		effect = {
+			trigger_event = { id = can_aus.7 }
 		}
 	}
 
-	on_complete = {
-		trigger_event = { id = can_aus.7 }
+	outcome = {
+		flags = { hidden invalid_outcome }
+		conclusion_desc = canada_mod_je_australia_aus_invalid_desc
+		trigger = {
+			is_subject = no
+		}
+		effect = {}
 	}
 
-	invalid = {
-		is_subject = no
-	}
+
 
 
 	should_be_pinned_by_default_uninvolved_or_context = yes
@@ -229,24 +261,30 @@ je_australia_gbr = {
 
 	scripted_button = je_australia_unite_aus_button
 
-	complete = {
-		any_country_in_australasia = {
-			is_subject_of = ROOT
-			owns_entire_state_region = STATE_NEW_SOUTH_WALES
-			owns_entire_state_region = STATE_VICTORIA
-			owns_entire_state_region = STATE_TASMANIA
-			owns_entire_state_region = STATE_QUEENSLAND
-			owns_entire_state_region = STATE_SOUTH_AUSTRALIA
-			owns_entire_state_region = STATE_WESTERN_AUSTRALIA
-			owns_entire_state_region = STATE_NORTHERN_TERRITORY
-			owns_entire_state_region = STATE_NORTH_ISLAND
-			owns_entire_state_region = STATE_SOUTH_ISLAND
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = canada_mod_je_australia_gbr_completed_desc
+		trigger = {
+			any_country_in_australasia = {
+				is_subject_of = ROOT
+				owns_entire_state_region = STATE_NEW_SOUTH_WALES
+				owns_entire_state_region = STATE_VICTORIA
+				owns_entire_state_region = STATE_TASMANIA
+				owns_entire_state_region = STATE_QUEENSLAND
+				owns_entire_state_region = STATE_SOUTH_AUSTRALIA
+				owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+				owns_entire_state_region = STATE_NORTHERN_TERRITORY
+				owns_entire_state_region = STATE_NORTH_ISLAND
+				owns_entire_state_region = STATE_SOUTH_ISLAND
+			}
+		}
+		effect = {
+			trigger_event = { id = can_aus.8 }
 		}
 	}
 
-	on_complete = {
-		trigger_event = { id = can_aus.8 }
-	}
 
 	weight = 100
 
